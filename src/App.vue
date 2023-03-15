@@ -9,7 +9,11 @@ function openMobileMenu(){
   mobile.isActive = 'active'
 }
 function closeMobileMenu(){
-  mobile.isActive = 'close'
+  mobile.isActive = 'close';
+  window.scrollTo(0,0);
+}
+function scrollToTop() {
+    window.scrollTo(0,0);
 }
 
 </script>
@@ -80,13 +84,13 @@ function closeMobileMenu(){
                 <h4 class="footer__widget-title">Links</h4>
                 <ul class="footer__menu-links">
                   <li class="footer__menu-link-item">
-                    <a href="#"><RouterLink to="/">Home</RouterLink></a>
+                    <a href="#"><RouterLink @click="scrollToTop" to="/">Home</RouterLink></a>
                   </li>
                   <li class="footer__menu-link-item">
-                    <a href="#"><RouterLink to="/about">Our Company</RouterLink></a>
+                    <a href="#"><RouterLink @click="scrollToTop"  to="/about">Our Company</RouterLink></a>
                   </li>
                   <li class="footer__menu-link-item">
-                    <a href="#"><RouterLink to="/contact">Contact Us</RouterLink></a>
+                    <a href="#"><RouterLink @click="scrollToTop"  to="/contact">Contact Us</RouterLink></a>
                   </li>
                 </ul>
               </div><!-- .footer__links -->

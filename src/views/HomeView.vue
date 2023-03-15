@@ -2,7 +2,9 @@
 
 // import TheWelcome from '../components/TheWelcome.vue'
 function navigateTo(data: any){
-    router.push({ path: `${data}`, replace: true })
+    router.push({ path: `${data}`, replace: true });
+    window.scrollTo(0,0);
+
 }
 const services = [
   {
