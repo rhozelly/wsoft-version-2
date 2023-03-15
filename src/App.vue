@@ -31,7 +31,13 @@ function closeMobileMenu(){
             <i class="fas fa-times"></i>
           </button>
         </div>
+        
         <div class="header__navigation-menu-container">
+          <div class="header__logo-mobile">
+            <a href="/">
+              <img alt="WSFOFT" src="@/assets/images/wsoft-logo.png" />
+            </a>
+          </div><!-- .header__logo -->
           <ul class="header__navigation-menu-list">
             <li class="header__navigation-menu-list-item"><RouterLink @click="closeMobileMenu" to="/">Home</RouterLink></li>
             <li class="header__navigation-menu-list-item"><RouterLink @click="closeMobileMenu" to="/about">About</RouterLink></li>
