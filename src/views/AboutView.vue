@@ -1,27 +1,27 @@
 <script setup lang="ts">
 const cores = [
   {
-    img: '/src/assets/images/1.png',
+    img: 'images/1.png',
     title: 'Innovation',
     content: 'We embrace creativity and innovation in everything we do, and constantly seek new and better ways to solve problems and improve progress.',
   },
   {
-    img: '/src/assets/images/2.png',
+    img: 'images/2.png',
     title: 'Collaboration',
     content: 'We value teamwork and collaboration, and believe that working together with educators, students, and partners is the key to achieving success.',
   },
   {
-    img: '/src/assets/images/3.png',
+    img: 'images/3.png',
     title: 'Integrity',
     content: 'We operate with integrity and honesty, and maintain the highest ethical standards in all our interactions.',
   },
   {
-    img: '/src/assets/images/4.png',
+    img: 'images/4.png',
     title: 'Customer Focus',
     content: 'We are dedicated to understanding and meeting the needs of our customers, and providing them with exceptional service and support.',
   },
   {
-    img: '/src/assets/images/5.png',
+    img: 'images/5.png',
     title: 'Quality',
     content: `We are committed to delivering high-quality solutions and services that exceed our customers' expectations, and to continuously improving our products to better serve their needs.`,
   },

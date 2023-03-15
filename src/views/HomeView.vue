@@ -6,27 +6,27 @@ function navigateTo(data: any){
 }
 const services = [
   {
-    img: '/src/assets/images/wd-icon.png',
+    img: 'images/wd-icon.png',
     title: 'Website Development',
     content: 'Expert web development services for businesses of all sizes',
   },
   {
-    img: '/src/assets/images/wad-icon.png',
+    img: 'images/wad-icon.png',
     title: 'WEB APPLICATION development',
     content: 'Innovative web app solutions to power your business',
   },
   {
-    img: '/src/assets/images/ui-icon.png',
+    img: 'images/ui-icon.png',
     title: 'UI DESIGN',
     content: 'Crafting intuitive, user-friendly interfaces for a better digital world',
   },
   {
-    img: '/src/assets/images//ai-icon.png',
+    img: '/images/ai-icon.png',
     title: 'AI Development',
     content: 'Reduce customer service costs, improve response times, and increase customer satisfaction',
   },
   {
-    img: '/src/assets/images/m-icon.png',
+    img: 'images/m-icon.png',
     title: 'MAINTENANCE',
     content: 'We make website maintenance easy and hassle-free',
   },
