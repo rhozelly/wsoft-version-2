@@ -106,12 +106,14 @@
   }
   .about__banner-two {
     background-size: 311px;
+    height: 662px;
+    margin-top: 6px;
   }
   .about-us .about-us__content span {
     justify-content: center;
   }
-  .about__banner-two {
-    margin-top: 51px;
+  .about__banner-two-content {
+    padding: 15px 22px;
   }
   .services__content,
   .about-us .about-us__content span,
