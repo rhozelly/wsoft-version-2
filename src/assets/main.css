@@ -81,6 +81,7 @@ Buttons
   font-size: 18px;
   display: block;
   text-align: center;
+  transition: 0.25s;
 }
 .default-btn:hover {
   background-color: #ffffff;
@@ -391,7 +392,9 @@ Pages
 .about-us .about-us__content p {
   font-size: 16px;
   color: #080B30;
-  line-height: 1.3em;
+  line-height: 155%;
+  margin-top: -20px;
+  padding-bottom:10px
 }
 
 /* Objective CSS */
@@ -407,6 +410,7 @@ Pages
 .objective__button-wrapper {
   position: relative;
   padding-bottom: 32px;
+  padding-top: 20px;
 }
 .objective__btn {
   font-family: 'Plus Jakarta Sans';
@@ -420,7 +424,9 @@ Pages
   max-width: 400px;
   text-align: center;
   padding: 25px 0;
+  border: 1px solid #2B61EF !important;
   border: none;
+  transition: 0.25s;
 }
 .objective__image {
   background:transparent url("../assets/images/inquire-image.png") no-repeat center;
@@ -444,10 +450,9 @@ Pages
   top: 0;
   z-index: -1;
 }
-.objective__button:hover {  
-  background: white;
+.objective__btn:hover {
+  background-color: #ffffff;
   color: #2B61EF;
-  border: solid transparent;
   cursor: pointer;
 }
 .objectives span {    
@@ -459,6 +464,7 @@ Pages
   align-items: center;
   text-align: center;
   color: #2B61EF;
+  padding-bottom: 15px;
 }
 
 /*-----------------
@@ -501,6 +507,7 @@ Pages
   height: 614px;
   position: relative;
   background: transparent url("../assets/images/about-us-banner-two.jpg") no-repeat center center / cover;
+  background-size: 650px;
 }
 .about__banner-two-content{
   padding: 36px 22px;

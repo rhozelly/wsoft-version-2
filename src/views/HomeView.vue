@@ -74,7 +74,7 @@ const services = [
         <span>We are committed to providing excellent customer service and building <br> long-term partnerships with our clients.</span>
         <div class="objective__button-wrapper">
           <div class="objective__image"></div>
-          <button class="objective__btn default-btn btn-center" v-on:click="navigateTo('contact')">Inquire Now</button>
+          <button class="objective__btn" v-on:click="navigateTo('contact')">Inquire Now</button>
         </div>
       </div>
     </div>

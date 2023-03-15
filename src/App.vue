@@ -60,6 +60,10 @@ function closeMobileMenu(){
                   <span>경기 수원시 권선구 세권로 219 3층</span>
                 </div><!-- .footer__company-detail-item -->
                 <div class="footer__company-detail-item">
+                  <h5>대표</h5>
+                  <span>정원석 (Matt Jung)</span>
+                </div><!-- .footer__company-detail-item -->
+                <div class="footer__company-detail-item">
                   <h5>Email</h5>
                   <span>uedu.dev@gmail.com</span>
                 </div><!-- .footer__company-detail-item -->

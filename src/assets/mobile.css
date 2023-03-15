@@ -94,6 +94,9 @@
   .about-us .about-us__content span {
     justify-content: center;
   }
+  .about__banner-two {
+    margin-top: 51px;
+  }
   .services__content,
   .about-us .about-us__content span,
   .about__heading,
