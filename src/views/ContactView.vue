@@ -19,7 +19,7 @@
                 <font color="red" size="2">{{errorEmail}}</font>
                 </div>
                 <div class="contact-form__group">
-                  <input type="number" v-model="contact" name="" class="contact-form__field" placeholder="Contact Number*"   pattern="[0-9]-{4}-[0-9]-{6}">
+                  <input type="text" v-model="contact" name="" class="contact-form__field" placeholder="Contact Number*"   pattern="[0-9]-{4}-[0-9]-{6}">
                   <font color="red" size="2">{{errorContact}}</font>
                 </div>
               </div>
