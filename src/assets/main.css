@@ -373,12 +373,14 @@ Pages
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
+
 .additional__title-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .additional__box {
   display: flex;
   flex-direction: row;
@@ -387,9 +389,11 @@ Pages
   padding-bottom: 85px;
   padding-right: 63px;
 }
-.additional__box-col {  
+
+.additional__box-col {
   margin-left: 20px;
 }
+
 .additional .additional__title-wrapper span {
   font-family: 'Titillium Web';
   font-style: normal;
@@ -541,15 +545,16 @@ Pages
   font-size: 32px;
   font-family: 'Titillium Web', sans-serif;
   text-transform: uppercase;
-  line-height: 1.2em;
+  line-height: 1.5em;
 }
 
 .about-us .about-us__content p {
-  font-size: 16px;
+  font-size: 20px;
   color: #080B30;
-  line-height: 155%;
+  line-height: 1.8em;
   margin-top: -20px;
-  padding-bottom: 10px
+  padding-bottom: 10px;
+  text-align: justify;
 }
 
 /* Objective CSS */
