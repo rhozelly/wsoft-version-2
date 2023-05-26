@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import { reactive } from 'vue'
-
 const mobile = reactive({
   isActive: 'close'
 })

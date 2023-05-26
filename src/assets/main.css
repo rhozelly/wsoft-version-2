@@ -656,6 +656,10 @@ Pages
   line-height: 155%;
 }
 
+.about .about__text {
+  font-size: 21px;
+}
+
 .about__banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
