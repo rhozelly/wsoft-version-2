@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import router from '@/router';
+import AOS from 'aos'
 
-// import TheWelcome from '../components/TheWelcome.vue'
 function navigateTo(data: any) {
   router.push({ path: `${data}`, replace: true });
   window.scrollTo(0, 0);
@@ -131,6 +131,7 @@ const additionalServices = [
               권한 및 등급관리`
   },
 ]
+window.addEventListener('load', function () { AOS.init(); });
 
 </script>
 
@@ -138,19 +139,24 @@ const additionalServices = [
   <main id="content" class="primary-content home">
     <div class="banner">
       <div class="banner__wrapper">
-        <h1 class="banner__heading">디지털 세상. 귀사의 미래에 힘이 되겠습니다.<span class="highlight"></span></h1>
-        <h2 class="banner__subheading">Your partner in digital growth</h2>
-        <p class="banner__text">우리의 미션은 귀사의 비즈니스가 디지털 세계에서 성장하기 위해 필요한 도구와 전문성을 제공하는 것입니다.</p>
-        <RouterLink to="/contact" class="banner__btn default-btn btn-center">Inquire Now</RouterLink>
+        <h1 class="banner__heading" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50">디지털 세상. 귀사의 미래에
+          힘이 되겠습니다.<span class="highlight"></span></h1>
+        <h2 class="banner__subheading" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="80">Your partner
+          in digital growth</h2>
+        <p class="banner__text" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="110">우리의 미션은 귀사의 비즈니스가
+          디지털 세계에서 성장하기 위해 필요한 도구와 전문성을 제공하는 것입니다.</p>
+        <RouterLink to="/contact" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="1140"
+          class="banner__btn default-btn btn-center">Inquire Now</RouterLink>
         <div class="banner__img">
           <img src="../assets/images/banner-bg-image.jpg" alt="">
         </div>
       </div><!-- .banner__wrapper-->
     </div><!-- .banner -->
     <div class="service">
-      <h2>저의가 제공하는 서비스는</h2>
+      <h2 data-aos="slide-down">저의가 제공하는 서비스는</h2>
       <div class="services__wrapper">
-        <div class="services__box" v-for="service in services">
+        <div class="services__box" v-for="(service, index) in services" data-aos="fade-in" data-aos-easing="ease-in-out"
+           data-aos-once="false">
           <img class="services__img" v-bind:src="`${service.img}`" width="60">
           <span class="services__title">{{ service.title }}</span>
           <span class="services__content">{{ service.content }}</span>
@@ -159,11 +165,14 @@ const additionalServices = [
     </div>
     <div class="additional">
       <div class="additional__title-wrapper">
-        <span>services we offer</span>
-        <h2>Additionally, We offers</h2>
+        <span data-aos="fade-down" data-aos-easing="ease-in-out"  data-aos-once="false">services we
+          offer</span>
+        <h2 data-aos="fade-down" data-aos-delay="70" data-aos-easing="ease-in-out" 
+          data-aos-once="false">Additionally, We offers</h2>
       </div>
-      <div  class="additional__wrapper">
-        <div class="additional__box" v-for="service in additionalServices">
+      <div class="additional__wrapper">
+        <div class="additional__box" v-for="service in additionalServices" data-aos="fade-down"
+          data-aos-easing="ease-in-out"  data-aos-once="false">
           <span class="additional__order">{{ service.order }}</span>
           <div class="additional__box-col">
             <span class="additional__title">{{ service.title }}</span>
@@ -176,28 +185,38 @@ const additionalServices = [
       <div class="about-us__wrapper">
         <div class="about-us__image"><img src="../assets/images/about-us-bg-image.jpg" alt="about-us"></div>
         <div class="about-us__content">
-          <span>About Us</span>
-          <h2 class="about__heading">WSOFT는 최첨단 IT 기술을 바탕으로, 비즈니스의 운영 최적화와 목표 달성을 위한 혁신적인 솔루션을 제공하기 위해 노력하는 회사입니다.우리는
+          <span data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50">About
+            Us</span>
+          <h2 class="about__heading" data-aos="fade-down" data-aos-easing="ease-in-out" 
+            data-aos-once="false" data-aos-delay="70">WSOFT는 최첨단 IT 기술을 바탕으로, 비즈니스의 운영 최적화와 목표 달성을 위한 혁신적인 솔루션을 제공하기 위해
+            노력하는 회사입니다.우리는
             비즈니스의 성장을 위해 최선을 다하며, 함께 성공을 이루어 나갈 수 있도록 끊임없이 노력합니다</h2>
-          <h2 class="about__heading">WSOFT IS A CUTTING-EDGE IT COMPANY DEDICATED TO DELIVERING INNOVATIVE SOLUTIONS TO
+          <h2 class="about__heading" data-aos="fade-down" data-aos-easing="ease-in-out" 
+            data-aos-once="false" data-aos-delay="90">WSOFT IS A CUTTING-EDGE IT COMPANY DEDICATED TO DELIVERING
+            INNOVATIVE SOLUTIONS TO
             HELP BUSINESSES OPTIMIZE THEIR OPERATIONS AND ACHIEVE THEIR GOALS.</h2>
-          <p class="about__text">With a team of highly skilled and experienced professionals, provides a comprehensive
+          <p class="about__text" data-aos="fade-down" data-aos-easing="ease-in-out" 
+            data-aos-once="false" data-aos-delay="120">With a team of highly skilled and experienced professionals,
+            provides a comprehensive
             suite of services, including software development, cloud computing, cybersecurity, and digital marketing. We
             leverage the latest technologies and best practices to deliver customized solutions that meet the unique needs
             of our clients.</p>
-          <button class="inquire-button margin-not-center default-btn" v-on:click="navigateTo('about')">Explore
+          <button class="inquire-button margin-not-center default-btn" v-on:click="navigateTo('about')" data-aos="zoom-in"
+            data-aos-easing="ease-in-out"  data-aos-once="false" data-aos-delay="150">Explore
             Now</button>
         </div>
       </div>
     </div>
     <div class="objectives">
       <div class="objectives__wrapper">
-        <h2>We help business to achieve their <br> objectives</h2>
-        <span>We are committed to providing excellent customer service and building <br> long-term partnerships with our
+        <h2 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50">We help business to achieve their <br>
+          objectives</h2>
+        <span data-aos="fade" data-aos-delay="70">We are committed to providing
+          excellent customer service and building <br> long-term partnerships with our
           clients.</span>
-        <div class="objective__button-wrapper">
+        <div class="objective__button-wrapper" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="120">
           <div class="objective__image"></div>
-        <button class="objective__btn" v-on:click="navigateTo('contact')">Inquire Now</button>
+          <button class="objective__btn" v-on:click="navigateTo('contact')">Inquire Now</button>
       </div>
     </div>
   </div>
