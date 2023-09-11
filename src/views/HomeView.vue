@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import router from '@/router';
 import AOS from 'aos'
+import { PROJECTS } from '@/contants/projectContants.tsx'
 
 function navigateTo(data: any) {
   router.push({ path: `${data}`, replace: true });
   window.scrollTo(0, 0);
-
 }
+
+let projects = PROJECTS.slice(0, 6);
+
 const services = [
   {
     img: 'images/wd-icon.png',
@@ -156,7 +159,7 @@ window.addEventListener('load', function () { AOS.init(); });
       <h2 data-aos="slide-down">저의가 제공하는 서비스는</h2>
       <div class="services__wrapper">
         <div class="services__box" v-for="(service, index) in services" data-aos="fade-in" data-aos-easing="ease-in-out"
-           data-aos-once="false">
+          data-aos-once="false">
           <img class="services__img" v-bind:src="`${service.img}`" width="60">
           <span class="services__title">{{ service.title }}</span>
           <span class="services__content">{{ service.content }}</span>
@@ -165,14 +168,14 @@ window.addEventListener('load', function () { AOS.init(); });
     </div>
     <div class="additional">
       <div class="additional__title-wrapper">
-        <span data-aos="fade-down" data-aos-easing="ease-in-out"  data-aos-once="false">services we
+        <span data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="false">services we
           offer</span>
-        <h2 data-aos="fade-down" data-aos-delay="70" data-aos-easing="ease-in-out" 
-          data-aos-once="false">Additionally, We offers</h2>
+        <h2 data-aos="fade-down" data-aos-delay="70" data-aos-easing="ease-in-out" data-aos-once="false">Additionally, We
+          offers</h2>
       </div>
       <div class="additional__wrapper">
         <div class="additional__box" v-for="service in additionalServices" data-aos="fade-down"
-          data-aos-easing="ease-in-out"  data-aos-once="false">
+          data-aos-easing="ease-in-out" data-aos-once="false">
           <span class="additional__order">{{ service.order }}</span>
           <div class="additional__box-col">
             <span class="additional__title">{{ service.title }}</span>
@@ -187,23 +190,40 @@ window.addEventListener('load', function () { AOS.init(); });
         <div class="about-us__content">
           <span data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50">About
             Us</span>
-          <h2 class="about__heading" data-aos="fade-down" data-aos-easing="ease-in-out" 
-            data-aos-once="false" data-aos-delay="70">WSOFT는 최첨단 IT 기술을 바탕으로, 비즈니스의 운영 최적화와 목표 달성을 위한 혁신적인 솔루션을 제공하기 위해
+          <h2 class="about__heading" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="false"
+            data-aos-delay="70">WSOFT는 최첨단 IT 기술을 바탕으로, 비즈니스의 운영 최적화와 목표 달성을 위한 혁신적인 솔루션을 제공하기 위해
             노력하는 회사입니다.우리는
             비즈니스의 성장을 위해 최선을 다하며, 함께 성공을 이루어 나갈 수 있도록 끊임없이 노력합니다</h2>
-          <h2 class="about__heading" data-aos="fade-down" data-aos-easing="ease-in-out" 
-            data-aos-once="false" data-aos-delay="90">WSOFT IS A CUTTING-EDGE IT COMPANY DEDICATED TO DELIVERING
+          <h2 class="about__heading" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="false"
+            data-aos-delay="90">WSOFT IS A CUTTING-EDGE IT COMPANY DEDICATED TO DELIVERING
             INNOVATIVE SOLUTIONS TO
             HELP BUSINESSES OPTIMIZE THEIR OPERATIONS AND ACHIEVE THEIR GOALS.</h2>
-          <p class="about__text" data-aos="fade-down" data-aos-easing="ease-in-out" 
-            data-aos-once="false" data-aos-delay="120">With a team of highly skilled and experienced professionals,
+          <p class="about__text" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="false"
+            data-aos-delay="120">With a team of highly skilled and experienced professionals,
             provides a comprehensive
             suite of services, including software development, cloud computing, cybersecurity, and digital marketing. We
             leverage the latest technologies and best practices to deliver customized solutions that meet the unique needs
             of our clients.</p>
           <button class="inquire-button margin-not-center default-btn" v-on:click="navigateTo('about')" data-aos="zoom-in"
-            data-aos-easing="ease-in-out"  data-aos-once="false" data-aos-delay="150">Explore
-            Now</button>
+            data-aos-easing="ease-in-out" data-aos-once="false" data-aos-delay="150">View More</button>
+        </div>
+      </div>
+    </div>
+    <div class="projects container">
+      <div class="projects__wrapper">
+        <div class="project__title">
+          <h2 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50">Our Projects</h2>
+          <button class="project__explore" v-on:click="navigateTo('projects')">
+            <span>explore</span>          
+            <img src="/src/assets/images/explore.svg" alt="explore">  
+          </button>
+        </div>
+        <div class="project__content">
+          <div class="projects__boxes">
+            <div v-for="item in projects" :key="item.id" class="projects__box"   
+              :style="{ backgroundImage: 'url(/src/assets/screenshots/' + item.project_image + ')' }">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -217,7 +237,8 @@ window.addEventListener('load', function () { AOS.init(); });
         <div class="objective__button-wrapper" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="120">
           <div class="objective__image"></div>
           <button class="objective__btn" v-on:click="navigateTo('contact')">Inquire Now</button>
+        </div>
       </div>
     </div>
-  </div>
-</main></template>
+  </main>
+</template>
