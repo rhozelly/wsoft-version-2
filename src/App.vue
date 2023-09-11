@@ -44,6 +44,7 @@ function scrollToTop() {
           <ul class="header__navigation-menu-list">
             <li class="header__navigation-menu-list-item"><RouterLink @click="closeMobileMenu" to="/">Home</RouterLink></li>
             <li class="header__navigation-menu-list-item"><RouterLink @click="closeMobileMenu" to="/about">About</RouterLink></li>
+            <li class="header__navigation-menu-list-item"><RouterLink @click="closeMobileMenu" to="/projects">Projects</RouterLink></li>
             <li class="header__navigation-menu-list-item"><RouterLink @click="closeMobileMenu" to="/contact">Contact Us</RouterLink></li>
           </ul>
         </div>
