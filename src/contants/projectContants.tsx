@@ -24,16 +24,15 @@ export const PROJECTS = [
         project_image: 'sle-featured.png',
         project_description_image: '/src/assets/screenshots/sle-description-image.png',
         project_description_content: [
-            'User Management',
-            'Integration and Compatibility',
-            'Analytics and Reporting',
-            'APIs and Extensibility',
-            'Customization and Branding',
-            'Training for Payroll Personnel',
+            'Adaptive Curriculum',
+            'Grammar and Vocabulary',
+            'Immersive Conversations',
+            'Progress Tracking',
+            'Tutor Sessions',
         ],
-        project_description_sub_content: 'Discover the Future of Learning, boost engagement, and achieve unprecedented results. Discover the Future of Education Today!',
+        project_description_sub_content: 'Ultimate English vocabulary enhancement app, meticulously designed to boost your word power and comprehension',
         project_overview_image: '/src/assets/screenshots/hems-overview-image.png',
-        project_overview_content: '"Empower your workforce with our cutting-edge Learning Management System. Elevate skills, drive growth!”'
+        project_overview_content: '"Elevate your language skills and unlock a world of opportunities with a rich, diverse dictionary.”'
     },
     {
         id: 3,
@@ -42,16 +41,15 @@ export const PROJECTS = [
         project_image: 'tp-featured.png',
         project_description_image: '/src/assets/screenshots/tp-description-image.png',
         project_description_content: [
-            'User Management',
-            'Integration and Compatibility',
-            'Analytics and Reporting',
-            'APIs and Extensibility',
-            'Customization and Branding',
-            'Training for Payroll Personnel',
+            'Adaptive Curriculum',
+            'Grammar and Vocabulary',
+            'Immersive Conversations',
+            'Progress Tracking',
+            'Tutor Sessions',
         ],
-        project_description_sub_content: 'Discover the Future of Learning, boost engagement, and achieve unprecedented results. Discover the Future of Education Today!',
+        project_description_sub_content: 'Cutting-edge language learning application designed to help users master English with ease and confidence.',
         project_overview_image: '/src/assets/screenshots/hems-overview-image.png',
-        project_overview_content: '"Empower your workforce with our cutting-edge Learning Management System. Elevate skills, drive growth!”'
+        project_overview_content: '"Connect with native English speakers, practice in authentic situations, and gain the confidence you need to communicate effectively.”'
     },
     {
         id: 4,
