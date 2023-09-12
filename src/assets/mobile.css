@@ -277,20 +277,17 @@
     left: 0;
     top: 28px;
   }
-  
-  .description-banner-sub-content__wrapper {
-    min-width: 0;
-  }
 
   .categories__selections {
     flex: row;
     display: flex;
     flex-direction: column-reverse;
   }
+
   .description-banner-sub-content__wrapper {
-    min-width: 0;
+    min-width: 0 !important;
   }
-  
+
 }
 
 /*------------------------------------------
