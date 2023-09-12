@@ -10,7 +10,7 @@
                 {{ subtitle }}
             </p>
         </div>
-        <div class="project-banner__image">
+        <div class="project-banner__image" data-aos="slide-down" data-aos-easing="ease-in-out" >
             <img :src="`/src/assets/images/${imageurl}`" alt="projects">
         </div>
     </div>

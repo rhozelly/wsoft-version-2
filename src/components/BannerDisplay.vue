@@ -3,7 +3,7 @@
 <template>
     <div class="display-banner" :style="{ backgroundImage: 'url(/src/assets/screenshots/' + img + ')' }">
         <div class="display-banner__titles">
-            <span>{{ subheading }}</span>
+            <span data-aos="slide-down" data-aos-easing="ease-in-out" >{{ subheading }}</span>
             <h2>{{ heading }}</h2>
         </div>
     </div>

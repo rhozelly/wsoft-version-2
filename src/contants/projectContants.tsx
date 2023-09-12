@@ -22,7 +22,7 @@ export const PROJECTS = [
         project_name: 'SLE',
         cat: 'software',
         project_image: 'sle-featured.png',
-        project_description_image: 'hems-description-image.png',
+        project_description_image: '/src/assets/screenshots/sle-description-image.png',
         project_description_content: [
             'User Management',
             'Integration and Compatibility',
@@ -40,7 +40,7 @@ export const PROJECTS = [
         project_name: 'TP',
         cat: 'software',
         project_image: 'tp-featured.png',
-        project_description_image: 'hems-description-image.png',
+        project_description_image: '/src/assets/screenshots/tp-description-image.png',
         project_description_content: [
             'User Management',
             'Integration and Compatibility',
@@ -77,7 +77,7 @@ export const PROJECTS = [
     },
     {
         id: 6,
-        project_name: 'Dimple Cloud',
+        project_name: 'Dimple Live',
         cat: 'landing page',
         project_image: 'dimple-live-featured.png',
         project_description_image: '/src/assets/screenshots/dimple-live-description-image.png',
@@ -88,13 +88,13 @@ export const PROJECTS = [
     },
     {
         id: 7,
-        project_name: 'Dimple Cloud',
+        project_name: 'Digigooz',
         cat: 'landing page',
         project_image: 'digigooz-featured.png',
         project_description_image: '/src/assets/screenshots/digigooz-featured-description-image.png',
         project_description_content: 'We take pride in transforming visions into extraordinary digital experiences. Our recent collaboration with Dimple Cloud stands as a testament to our expertise in web design.',
         project_description_sub_content: '',
-        project_overview_image: '/src/assets/screenshots/digigooz-featured-overview.png',
+        project_overview_image: '/src/assets/screenshots/digigooz-overview.png',
         project_overview_content: ''
     },
 ]

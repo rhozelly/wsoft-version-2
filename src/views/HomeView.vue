@@ -219,8 +219,8 @@ window.addEventListener('load', function () { AOS.init(); });
           </button>
         </div>
         <div class="project__content">
-          <div class="projects__boxes">
-            <div v-for="item in projects" :key="item.id" class="projects__box"   
+          <div class="projects__boxes"  data-aos-easing="ease-in-out" data-aos-delay="50">
+            <div v-for="item in projects" :key="item.id" class="projects__box"  v-on:click="navigateTo('projects')"  
               :style="{ backgroundImage: 'url(/src/assets/screenshots/' + item.project_image + ')' }">
             </div>
           </div>
