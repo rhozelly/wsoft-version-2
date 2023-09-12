@@ -3,10 +3,10 @@
 <template>
     <div class="description-banner container">
         <div class="description-banner__wrapper ">
-            <div class="description-banner-image__wrapper">
+            <div class="description-banner-image__wrapper" data-aos="slide-down" data-aos-easing="ease-in-out" >
                 <img :src=imgDescption alt="project laptop">
             </div>
-            <div class="description-banner-content__wrapper">
+            <div class="description-banner-content__wrapper" data-aos="slide-down" data-aos-easing="ease-in-out" >
                 <ul class="description-banner-content" v-if="cat === 'software'">
                     <li v-for="list of content">{{ list }}</li>
                 </ul>
@@ -32,7 +32,7 @@ export default {
 .description-banner__wrapper {
     flex-direction: row;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding-top: 140px;
@@ -41,7 +41,7 @@ export default {
 
 .description-banner-image__wrapper {
     width: 547px;
-    height: 318px;
+    height: 100%;
     flex-shrink: 0;
 }
 

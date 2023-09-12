@@ -3,10 +3,10 @@
 <template>
     <div class="overview-banner" :style="{background: cat === 'landing page' ? 'white' :  '#F6F8FF'}">
         <div class="overview-banner__wrapper container">
-            <div class="overview-banner-image__wrapper">
+            <div class="overview-banner-image__wrapper" data-aos="slide-down" data-aos-easing="ease-in-out" >
                 <img :src=imgOverview alt="overview">
             </div>
-            <div class="overview-banner-content__wrapper" v-if="cat !== 'landing page'">
+            <div class="overview-banner-content__wrapper" v-if="cat !== 'landing page'" data-aos="slide-down" data-aos-easing="ease-in-out" >
                 <span class="overview-banner-content">{{ content }}</span>
             </div>
         </div>
