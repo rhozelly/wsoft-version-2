@@ -1,0 +1,95 @@
+{
+  "hello": "Hellooo!",
+  "welcome": "Welcomeeeee",
+  "banner-title": "DIGITAL WORLD. WE WILL HELP YOU IN YOUR FUTURE.",
+  "banner-sub-title": "Your Partner In Digital Growth",
+  "banner-description": "Our mission is to provide your business with the tools and expertise it needs to grow in the digital world.",
+  "inquire-now": "Inquire Now",
+  "service-title": "The services we provide are:",
+  "service-sub-title": "SERVICES WE OFFER",
+  "additionally": "Additionally, We Offer",
+  "about-title": "About us",
+  "about-description": "WSOFT IS A COMPANY THAT STRIVES TO PROVIDE INNOVATIVE SOLUTIONS TO OPTIMIZE BUSINESS OPERATIONS AND ACHIEVE GOALS BASED ON CUTTING-EDGE IT TECHNOLOGY. WE DO OUR BEST TO GROW YOUR BUSINESS AND CONSTANTLY STRIVE TO ACHIEVE SUCCESS TOGETHER. WSOFT IS A CUTTING-EDGE IT COMPANY DEDICATED TO DELIVERING INNOVATIVE SOLUTIONS TO HELP BUSINESSES OPTIMIZE THEIR OPERATIONS AND ACHIEVE THEIR GOALS.",
+  "about-description-two": "WSOFT IS A CUTTING-EDGE IT COMPANY DEDICATED TO DELIVERING INNOVATIVE SOLUTIONS TO HELP BUSINESSES OPTIMIZE THEIR OPERATIONS AND ACHIEVE THEIR GOALS",
+  "about-sub-description": "With a team of highly skilled and experienced professionals, provides a comprehensive suite of services, including software development, cloud computing, cybersecurity, and digital marketing. We leverage the latest technologies and best practices to deliver customized solutions that meet the unique needs of our clients.",
+  "view-more": "view more",
+  "explore": "explore",
+  "project-title": "Our Projects",
+  "cta-title": "We Help Business To Achieve Their Objectives",
+  "cta-description": "We are committed to providing excellent customer service and building long-term partnerships with our clients.",
+  "services": [
+    {
+      "img": "images/wd-icon.png",
+      "title": "WEBSITE DEVELOPMENT",
+      "content": "Expert web development services for businesses of all sizes"
+    },
+    {
+      "img": "images/wad-icon.png",
+      "title": "WEB APPLICATION DEVELOPMENT",
+      "content": "Innovative web app solutions to power your business"
+    },
+    {
+      "img": "images/ui-icon.png",
+      "title": "UI DESIGN",
+      "content": "Crafting intuitive, user-friendly interfaces for a better digital world"
+    },
+    {
+      "img": "/images/ai-icon.png",
+      "title": "ARTIFICIAL INTELLIGENCE UTILIZATION SERVICE",
+      "content": "Reduce customer service costs, improve response times, and increase customer satisfaction"
+    },
+    {
+      "img": "images/m-icon.png",
+      "title": "MAINTENANCE",
+      "content": "We make website maintenance easy and hassle-free"
+    }
+  ],
+  "about": {
+    "page-banner-title": "OUR COMPANY IS AN IT FIRM THAT SPECIALIZES IN CREATING SOLUTIONS AND PASSIONATE ABOUT PROVIDING EXCEPTIONAL TECHNOLOGY SOLUTIONS TO OUR CLIENTS.",
+    "page-banner-description": "We leverage our deep understanding of technology and pedagogy to develop innovative tools and platforms that empower users and learners to connect, collaborate, and learn in new and meaningful ways.",
+    "page-bubble-one": "At our core, we value collaboration, creativity, and customer satisfaction.",
+    "page-bubble-two": "We believe that by working closely with our clients and understanding their unique needs, we can create tailored solutions that are both effective and efficient.",
+    "page-bubble-three": "Our team of experts is skilled in a wide range of technologies and platforms, allowing us to provide comprehensive solutions that meet the diverse needs of our clients."
+  },
+  "core": "Our Core Values",
+  "cores": [
+    {
+      "img": "images/1.png",
+      "title": "innovation",
+      "content": "We embrace creativity and innovation in everything we do, and constantly seek new and better ways to solve problems and improve progress."
+    },
+    {
+      "img": "images/2.png",
+      "title": "COLLABORATION",
+      "content": "We value teamwork and collaboration, and believe that working together with educators, students, and partners is the key to achieving success."
+    },
+    {
+      "img": "images/3.png",
+      "title": "INTEGRITY",
+      "content": "We operate with integrity and honesty, and maintain the highest ethical standards in all our interactions."
+    },
+    {
+      "img": "images/4.png",
+      "title": "CUSTOMER FOCUS",
+      "content": "We are dedicated to understanding and meeting the needs of our customers, and providing them with exceptional service and support."
+    },
+    {
+      "img": "images/5.png",
+      "title": "QUALITY",
+      "content": "We are committed to delivering high-quality solutions and services that exceed our customers' expectations, and to continuously improving our products to better serve their needs."
+    }
+  ],
+  "mission": "mission",
+  "mission-description": "We are committed to providing educators and learners with the tools they need to succeed, and to constantly pushing the boundaries of what is possible through technology.",
+  "vision": "vision",
+  "vision-description": "Our vision is to be a global leader in providing cutting-edge technology solutions that transform the way businesses operate. We will achieve this by investing in the latest technologies, nurturing a culture of innovation, and continuously delivering exceptional value to our clients.",
+  "project": "Projects",
+  "project-description": "Innovating for Impact",
+  "explore-our-project": "Explore Our",
+  "project-categories": [
+    "All",
+    "Software",
+    "Landing Page",
+    "Content"
+  ]
+}

@@ -52,13 +52,13 @@ export default {
   <main id="content" class="primary-content about">
 
     <div class="container">
-      <BannerProject :title=titleData :subtitle=subheadingData :imageurl=imageData></BannerProject>
+      <BannerProject :title="$t('project')" :subtitle="$t('project-description')" :imageurl=imageData></BannerProject>
     </div>
     <div class="project-overview">
       <div class="container">
         <div class="categories">
           <div class="categories__title" data-aos="slide-down" data-aos-easing="ease-in-out" data-aos-delay="50">
-            Explore Our <span class="highlight-text">Projects</span>
+            {{ $t('explore-our-project') }} <span class="highlight-text">{{ $t('project') }}</span>
           </div>
           <div class="categories__selections" data-aos="slide-down" data-aos-easing="ease-in-out" data-aos-delay="50">
             <div class="categories__button" v-for="item in categories" :key="item.id" @click="selectActive(item)"
