@@ -2,6 +2,20 @@
 992px
 ------------------------------------------*/
 @media screen and (max-width: 992px) {
+  .translate {
+    display: none;
+  }
+  .show-list {
+    margin: 0;
+  }
+  .header__translate-mobile {
+    position: relative;
+    width: 135px;
+    margin-right: 30px;
+  }
+  .header__navigation-menu-toggle-inner {
+    display: flex;
+  }
   .header__navigation-menu-toggle-wrapper {
     display: block;
     position: relative;

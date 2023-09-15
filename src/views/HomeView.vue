@@ -1,42 +1,15 @@
 <script setup lang="ts">
 import router from '@/router';
-import AOS from 'aos'
-import { PROJECTS } from '@/contants/projectContants.tsx'
+import AOS from 'aos';
+import { PROJECTS } from '@/contants/projectContants.tsx';
+
+import { useI18n } from 'vue-i18n';
 
 function navigateTo(data: any) {
   router.push({ path: `${data}`, replace: true });
   window.scrollTo(0, 0);
 }
-
 let projects = PROJECTS.slice(0, 6);
-
-const services = [
-  {
-    img: 'images/wd-icon.png',
-    title: '웹사이트 개발',
-    content: 'Expert web development services for businesses of all sizes',
-  },
-  {
-    img: 'images/wad-icon.png',
-    title: '웹 애플리케이션 개발',
-    content: 'Innovative web app solutions to power your business',
-  },
-  {
-    img: 'images/ui-icon.png',
-    title: 'UI 디자인',
-    content: 'Crafting intuitive, user-friendly interfaces for a better digital world',
-  },
-  {
-    img: '/images/ai-icon.png',
-    title: '인공지능 활용 서비스',
-    content: 'Reduce customer service costs, improve response times, and increase customer satisfaction',
-  },
-  {
-    img: 'images/m-icon.png',
-    title: '유지보수',
-    content: 'We make website maintenance easy and hassle-free',
-  },
-]
 
 const additionalServices = [
   {
@@ -134,6 +107,7 @@ const additionalServices = [
               권한 및 등급관리`
   },
 ]
+
 window.addEventListener('load', function () { AOS.init(); });
 
 </script>
@@ -142,36 +116,37 @@ window.addEventListener('load', function () { AOS.init(); });
   <main id="content" class="primary-content home">
     <div class="banner">
       <div class="banner__wrapper">
-        <h1 class="banner__heading" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50">디지털 세상. 귀사의 미래에
-          힘이 되겠습니다.<span class="highlight"></span></h1>
-        <h2 class="banner__subheading" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="80">Your partner
-          in digital growth</h2>
-        <p class="banner__text" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="110">우리의 미션은 귀사의 비즈니스가
-          디지털 세계에서 성장하기 위해 필요한 도구와 전문성을 제공하는 것입니다.</p>
+        <h1 class="banner__heading" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50">{{
+          $t('banner-title') }}<span class="highlight"></span></h1>
+        <h2 class="banner__subheading" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="80"> {{
+          $t('banner-sub-title') }}</h2>
+        <p class="banner__text" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="110">{{
+          $t('banner-description') }}</p>
         <RouterLink to="/contact" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="1140"
-          class="banner__btn default-btn btn-center">Inquire Now</RouterLink>
+          class="banner__btn default-btn btn-center"> {{ $t('inquire-now') }}</RouterLink>
         <div class="banner__img">
           <img src="../assets/images/banner-bg-image.jpg" alt="">
         </div>
       </div><!-- .banner__wrapper-->
     </div><!-- .banner -->
     <div class="service">
-      <h2 data-aos="slide-down">저의가 제공하는 서비스는</h2>
+      <h2 data-aos="slide-down">{{ $t('service-title') }}</h2>
       <div class="services__wrapper">
-        <div class="services__box" v-for="(service, index) in services" data-aos="fade-in" data-aos-easing="ease-in-out"
-          data-aos-once="false">
-          <img class="services__img" v-bind:src="`${service.img}`" width="60">
-          <span class="services__title">{{ service.title }}</span>
-          <span class="services__content">{{ service.content }}</span>
+        <div class="services__box" v-for="(item, key, index) in 5" :key="item" data-aos="fade-in"
+          data-aos-easing="ease-in-out" data-aos-once="false">
+          <img class="services__img" v-bind:src="$t('services.' + key + '.img')" width="60">
+          <span class="services__title">{{ $t('services.' + key + '.title') }}</span>
+          <span class="services__content">{{ $t('services.' + key + '.content') }}</span>
         </div>
       </div>
     </div>
     <div class="additional">
       <div class="additional__title-wrapper">
-        <span data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="false">services we
-          offer</span>
-        <h2 data-aos="fade-down" data-aos-delay="70" data-aos-easing="ease-in-out" data-aos-once="false">Additionally, We
-          offers</h2>
+        <span data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="false">{{ $t('service-sub-title')
+        }}</span>
+        <h2 data-aos="fade-down" data-aos-delay="70" data-aos-easing="ease-in-out" data-aos-once="false">
+          {{ $t('additionally') }}
+        </h2>
       </div>
       <div class="additional__wrapper">
         <div class="additional__box" v-for="service in additionalServices" data-aos="fade-down"
@@ -188,39 +163,38 @@ window.addEventListener('load', function () { AOS.init(); });
       <div class="about-us__wrapper">
         <div class="about-us__image"><img src="../assets/images/about-us-bg-image.jpg" alt="about-us"></div>
         <div class="about-us__content">
-          <span data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50">About
-            Us</span>
+          <span data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50">
+            {{ $t('about-title') }}
+          </span>
           <h2 class="about__heading" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="false"
-            data-aos-delay="70">WSOFT는 최첨단 IT 기술을 바탕으로, 비즈니스의 운영 최적화와 목표 달성을 위한 혁신적인 솔루션을 제공하기 위해
-            노력하는 회사입니다.우리는
-            비즈니스의 성장을 위해 최선을 다하며, 함께 성공을 이루어 나갈 수 있도록 끊임없이 노력합니다</h2>
+            data-aos-delay="70">
+            {{ $t('about-description') }}
+          </h2>
           <h2 class="about__heading" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="false"
-            data-aos-delay="90">WSOFT IS A CUTTING-EDGE IT COMPANY DEDICATED TO DELIVERING
-            INNOVATIVE SOLUTIONS TO
-            HELP BUSINESSES OPTIMIZE THEIR OPERATIONS AND ACHIEVE THEIR GOALS.</h2>
+            data-aos-delay="90">{{ $t('about-description-two') }}</h2>
           <p class="about__text" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="false"
-            data-aos-delay="120">With a team of highly skilled and experienced professionals,
-            provides a comprehensive
-            suite of services, including software development, cloud computing, cybersecurity, and digital marketing. We
-            leverage the latest technologies and best practices to deliver customized solutions that meet the unique needs
-            of our clients.</p>
+            data-aos-delay="120">
+            {{ $t('about-sub-description') }}
+          </p>
           <button class="inquire-button margin-not-center default-btn" v-on:click="navigateTo('about')" data-aos="zoom-in"
-            data-aos-easing="ease-in-out" data-aos-once="false" data-aos-delay="150">View More</button>
+            data-aos-easing="ease-in-out" data-aos-once="false" data-aos-delay="150">
+            {{ $t('view-more') }}
+          </button>
         </div>
       </div>
     </div>
     <div class="projects container">
       <div class="projects__wrapper">
         <div class="project__title">
-          <h2 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50">Our Projects</h2>
+          <h2 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50"> {{ $t('project-title') }}</h2>
           <button class="project__explore" v-on:click="navigateTo('projects')">
-            <span>explore</span>          
-            <img src="/src/assets/images/explore.svg" alt="explore">  
+            <span> {{ $t('explore') }}</span>
+            <img src="/src/assets/images/explore.svg" alt="explore">
           </button>
         </div>
         <div class="project__content">
-          <div class="projects__boxes"  data-aos-easing="ease-in-out" data-aos-delay="50">
-            <div v-for="item in projects" :key="item.id" class="projects__box"  v-on:click="navigateTo('projects')"  
+          <div class="projects__boxes" data-aos-easing="ease-in-out" data-aos-delay="50">
+            <div v-for="item in projects" :key="item.id" class="projects__box" v-on:click="navigateTo('projects')"
               :style="{ backgroundImage: 'url(/src/assets/screenshots/' + item.project_image + ')' }">
             </div>
           </div>
@@ -229,14 +203,15 @@ window.addEventListener('load', function () { AOS.init(); });
     </div>
     <div class="objectives">
       <div class="objectives__wrapper">
-        <h2 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50">We help business to achieve their <br>
-          objectives</h2>
-        <span data-aos="fade" data-aos-delay="70">We are committed to providing
-          excellent customer service and building <br> long-term partnerships with our
-          clients.</span>
+        <h2 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50">
+          {{ $t('cta-title') }}
+        </h2>
+        <span data-aos="fade" data-aos-delay="70">
+          {{ $t('cta-description') }}
+        </span>
         <div class="objective__button-wrapper" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="120">
           <div class="objective__image"></div>
-          <button class="objective__btn" v-on:click="navigateTo('contact')">Inquire Now</button>
+          <button class="objective__btn" v-on:click="navigateTo('contact')"> {{ $t('inquire-now') }}</button>
         </div>
       </div>
     </div>

@@ -1,10 +1,37 @@
 {
   "extends": "./tsconfig.app.json",
-  "exclude": [],
+  "exclude": [
+    "node_modules",
+    "src/locales/fr.json",
+    "src/locales/en.json",
+  ],
   "compilerOptions": {
     "composite": true,
     "lib": [],
-    "types": ["node", "jsdom"],    
-    "allowJs": true
-  }
+    "types": [
+      "node",
+      "jsdom",
+    ],
+    "allowJs": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/i18n.js",
+    "src/locales/**/*.js",
+    "src/**/*.json",
+    "src/locales/**/*.json",
+  ],
 }
