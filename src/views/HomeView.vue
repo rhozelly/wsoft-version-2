@@ -125,7 +125,7 @@ window.addEventListener('load', function () { AOS.init(); });
         <RouterLink to="/contact" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="1140"
           class="banner__btn default-btn btn-center"> {{ $t('inquire-now') }}</RouterLink>
         <div class="banner__img">
-          <img src="../assets/images/banner-bg-image.jpg" alt="">
+          <img src="../assets/images/banner-bg-image.jpg" alt="banner">
         </div>
       </div><!-- .banner__wrapper-->
     </div><!-- .banner -->
@@ -170,8 +170,8 @@ window.addEventListener('load', function () { AOS.init(); });
             data-aos-delay="70">
             {{ $t('about-description') }}
           </h2>
-          <h2 class="about__heading" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="false"
-            data-aos-delay="90">{{ $t('about-description-two') }}</h2>
+          <!-- <h2 class="about__heading" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="false"
+            data-aos-delay="90">{{ $t('about-description-two') }}</h2> -->
           <p class="about__text" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="false"
             data-aos-delay="120">
             {{ $t('about-sub-description') }}
