@@ -45,7 +45,9 @@
     }
   ],
   "about": {
-    "page-banner-title": "OUR COMPANY IS AN IT FIRM THAT SPECIALIZES IN CREATING SOLUTIONS AND PASSIONATE ABOUT PROVIDING EXCEPTIONAL TECHNOLOGY SOLUTIONS TO OUR CLIENTS.",
+    "page-banner-title-start": "OUR COMPANY IS AN IT FIRM THAT SPECIALIZES IN CREATING SOLUTIONS AND PASSIONATE ABOUT",
+    "page-banner-title-highlight": "PROVIDING EXCEPTIONAL TECHNOLOGY SOLUTIONS ",
+    "page-banner-title-end": "TO OUR CLIENTS.",
     "page-banner-description": "We leverage our deep understanding of technology and pedagogy to develop innovative tools and platforms that empower users and learners to connect, collaborate, and learn in new and meaningful ways.",
     "page-bubble-one": "At our core, we value collaboration, creativity, and customer satisfaction.",
     "page-bubble-two": "We believe that by working closely with our clients and understanding their unique needs, we can create tailored solutions that are both effective and efficient.",
@@ -87,9 +89,29 @@
   "project-description": "Innovating for Impact",
   "explore-our-project": "Explore Our",
   "project-categories": [
-    "All",
-    "Software",
-    "Landing Page",
-    "Content"
+    {
+      "id": "0",
+      "title": "all",
+      "img": "src/assets/images/all.svg",
+      "isActive": "true"
+    },
+    {
+      "id": "1",
+      "title": "software",
+      "img": "src/assets/images/soft.svg",
+      "isActive": "false"
+    },
+    {
+      "id": "2",
+      "title": "landing page",
+      "img": "src/assets/images/landing.svg",
+      "isActive": false
+    },
+    {
+      "id": "3",
+      "title": "content",
+      "img": "src/assets/images/content.svg",
+      "isActive": "false"
+    }
   ]
 }

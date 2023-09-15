@@ -25,8 +25,8 @@ export default {
       currentLanguage: this.$i18n.locale,
       show: false,
       options: [
-        { label: 'English', icon: 'en-flag.png', value: 'en', active: true },
-        { label: 'Korean', icon: 'kr-flag.png', value: 'kr', active: false },
+        { label: 'English', icon: 'en-flag.png', value: 'en', active: false },
+        { label: 'Korean', icon: 'kr-flag.png', value: 'kr', active: true },
       ]
     };
   },

@@ -4,9 +4,10 @@
   <main id="content" class="primary-content about">
     <div class="about__banner container">
       <div class="about__banner-content">
-        <h1 data-aos="slide-down" data-aos-easing="ease-in-out" data-aos-delay="50">OUR COMPANY IS AN IT FIRM THAT
-          SPECIALIZES IN CREATING SOLUTIONS AND PASSIONATE ABOUT
-          <span class="highlight"> PROVIDING EXCEPTIONAL TECHNOLOGY SOLUTIONS</span> TO OUR CLIENTS.
+        <h1 data-aos="slide-down" data-aos-easing="ease-in-out" data-aos-delay="50">
+          {{ $t('about.page-banner-title-start') }}
+          <span class="highlight"> {{ $t('about.page-banner-title-highlight') }} </span>
+          {{ $t('about.page-banner-title-end') }}
         </h1>
         <p class="about__text" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="60">
           {{ $t('about.page-banner-description') }}
