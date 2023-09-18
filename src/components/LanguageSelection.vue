@@ -1,7 +1,7 @@
 <template>
   <button class="translator-btn" @click="dropdown">
     <div class="flag-wrapper">
-      <img :src="`/src/assets/flag/${currentLanguage}-flag.png`" alt="flag">
+      <img :src="`/flag/${currentLanguage}-flag.png`" alt="flag">
     </div>
     {{ currentLanguage }}
   </button>
@@ -10,7 +10,7 @@
       :class="[option.active ? 'selected' : '']">
       <div class="language-info">
         <div class="language-flag">
-          <img :src="`/src/assets/flag/${option.icon}`" alt="flag">
+          <img v-bind:src=option.icon alt="flag">
         </div>
         <span class="lang-name">{{ option.label }}</span>
       </div>
@@ -25,8 +25,8 @@ export default {
       currentLanguage: this.$i18n.locale,
       show: false,
       options: [
-        { label: 'English', icon: 'en-flag.png', value: 'en', active: false },
-        { label: 'Korean', icon: 'kr-flag.png', value: 'kr', active: true },
+        { label: 'English', icon: 'flag/en-flag.png', value: 'en', active: false },
+        { label: 'Korean', icon: 'flag/kr-flag.png', value: 'kr', active: true },
       ]
     };
   },
