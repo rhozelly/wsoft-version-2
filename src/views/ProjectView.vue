@@ -6,10 +6,10 @@ import BannerOverview from '@/components/BannerOverview.vue';
 import { PROJECTS } from '@/contants/projectContants.tsx'
 
 const categories = [
-  { id: '0', title: 'all', img: 'src/assets/images/all.svg', isActive: true },
-  { id: '1', title: 'software', img: 'src/assets/images/soft.svg', isActive: false },
-  { id: '2', title: 'landing page', img: 'src/assets/images/landing.svg', isActive: false },
-  { id: '3', title: 'content', img: 'src/assets/images/content.svg', isActive: false },
+  { id: '0', title: 'all', img: 'images/all.svg', isActive: true },
+  { id: '1', title: 'software', img: 'images/soft.svg', isActive: false },
+  { id: '2', title: 'landing page', img: 'images/landing.svg', isActive: false },
+  { id: '3', title: 'content', img: 'images/content.svg', isActive: false },
 ]
 let selectedData = '';
 export default {
@@ -23,7 +23,7 @@ export default {
     return {
       titleData: 'Projects',
       subheadingData: 'Innovating for Impact',
-      imageData: 'project-banner-image.png',
+      imageData: 'images/project-banner-image.png',
       categories,
       projects: PROJECTS,
       filterProjects: [],
@@ -63,7 +63,7 @@ export default {
           <div class="categories__selections" data-aos="slide-down" data-aos-easing="ease-in-out" data-aos-delay="50">
             <div class="categories__button" v-for="item in categories" :key="item.id" @click="selectActive(item)"
               :class="{ 'active-category': item.isActive }">
-              <img :src=item.img alt="icons">
+              <img v-bind:src=item.img alt="icons">
               <span>{{ item.title }}</span>
             </div>
           </div>

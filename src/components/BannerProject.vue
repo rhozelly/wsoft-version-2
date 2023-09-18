@@ -11,7 +11,7 @@
             </p>
         </div>
         <div class="project-banner__image" data-aos="slide-down" data-aos-easing="ease-in-out" >
-            <img :src="`/src/assets/images/${imageurl}`" alt="projects">
+            <img v-bind:src=imageurl alt="projects">
         </div>
     </div>
 </template>
