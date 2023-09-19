@@ -3,7 +3,7 @@
     <div class="flag-wrapper">
       <img v-bind:src=currentFlagIcon alt="flag">
     </div>
-    {{ currentLanguage }} {{ console.log(currentLanguage) }}
+    {{ currentLanguage }}
   </button>
   <ul class="translator-list" :class="[show ? 'show-list' : '']">
     <li v-for="(option, index) in options" :key="index" @click="clicked(option, index)"
