@@ -6,10 +6,10 @@ import BannerOverview from '@/components/BannerOverview.vue';
 import { PROJECTS } from '@/contants/projectContants.tsx'
 
 const categories = [
-  { id: '0', title: 'all', img: 'images/all.svg', isActive: true },
-  { id: '1', title: 'software', img: 'images/soft.svg', isActive: false },
-  { id: '2', title: 'landing page', img: 'images/landing.svg', isActive: false },
-  { id: '3', title: 'content', img: 'images/content.svg', isActive: false },
+  { id: '0', title: 'all', img: '/src/assets/images/all.svg', isActive: true },
+  { id: '1', title: 'software', img: '/src/assets/images/soft.svg', isActive: false },
+  { id: '2', title: 'landing page', img: '/src/assets/images/landing.svg', isActive: false },
+  { id: '3', title: 'content', img: '/src/assets/images/content.svg', isActive: false },
 ]
 let selectedData = '';
 export default {
@@ -23,7 +23,7 @@ export default {
     return {
       titleData: 'Projects',
       subheadingData: 'Innovating for Impact',
-      imageData: 'images/project-banner-image.png',
+      imageData: '/src/assets/images/project-banner-image.png',
       categories,
       projects: PROJECTS,
       filterProjects: [],
@@ -97,12 +97,12 @@ export default {
       <div class="container projects" v-else>
         <div class="projects__boxes" v-if="filterProjects.length > 0">
           <div v-for="item in filterProjects" :key="item.id" class="projects__box" @click="selectedProject(item)"
-            :style="{ backgroundImage: 'url(/src/assets/screenshots/' + item.project_image + ')' }">
+            :style="{ backgroundImage: 'url('+item.project_image + ')' }">
           </div>
         </div>
         <div class="projects__boxes" v-else>
           <div v-for="item in projects" :key="item.id" class="projects__box" @click="selectedProject(item)"
-            :style="{ backgroundImage: 'url(/src/assets/screenshots/' + item.project_image + ')' }">
+            :style="{ backgroundImage: 'url(' + item.project_image + ')' }">
           </div>
         </div>
       </div>
