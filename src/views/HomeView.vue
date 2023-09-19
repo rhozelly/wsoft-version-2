@@ -3,7 +3,6 @@ import router from '@/router';
 import AOS from 'aos';
 import { PROJECTS } from '@/contants/projectContants.tsx';
 
-import { useI18n } from 'vue-i18n';
 
 function navigateTo(data: any) {
   router.push({ path: `${data}`, replace: true });
@@ -194,8 +193,8 @@ window.addEventListener('load', function () { AOS.init(); });
         </div>
         <div class="project__content">
           <div class="projects__boxes" data-aos-easing="ease-in-out" data-aos-delay="50">
-            <div v-for="item in projects" :key="item.id" class="projects__box" v-on:click="navigateTo('projects')"
-              :style="{ backgroundImage: 'url(/src/assets/screenshots/' + item.project_image + ')' }">
+            <div v-for="item in projects" :key="item.id" class="projects__box" v-on:click="navigateTo('projects')" :style="{ 'background-image': 'url(' + item.project_image + ')' }">
+              <!-- + item.project_image +  -->
             </div>
           </div>
         </div>

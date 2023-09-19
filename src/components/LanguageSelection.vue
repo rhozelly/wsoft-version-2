@@ -1,9 +1,9 @@
 <template>
   <button class="translator-btn" @click="dropdown">
     <div class="flag-wrapper">
-      <img :src="`/flag/${currentLanguage}-flag.png`" alt="flag">
+      <img v-bind:src=currentFlagIcon alt="flag">
     </div>
-    {{ currentLanguage }}
+    {{ currentLanguage }} {{ console.log(currentLanguage) }}
   </button>
   <ul class="translator-list" :class="[show ? 'show-list' : '']">
     <li v-for="(option, index) in options" :key="index" @click="clicked(option, index)"
@@ -19,15 +19,21 @@
 </template>
   
 <script>
+
+import usFlag from "@/assets/flag/en-flag.png"
+import koreanFlag from "@/assets/flag/kr-flag.png"
 export default {
   data() {
     return {
       currentLanguage: this.$i18n.locale,
       show: false,
       options: [
-        { label: 'English', icon: 'flag/en-flag.png', value: 'en', active: false },
-        { label: 'Korean', icon: 'flag/kr-flag.png', value: 'kr', active: true },
-      ]
+        { label: 'English', icon: usFlag, value: 'en', active: false },
+        { label: 'Korean', icon: koreanFlag, value: 'kr', active: true },
+      ],
+      usFlag,
+      koreanFlag,      
+      currentFlagIcon: this.$i18n.locale === 'en' ? usFlag : koreanFlag,
     };
   },
   methods: {
@@ -85,6 +91,7 @@ export default {
   border-radius: 5px;
   top: 50px;
   right: 0;
+  z-index: 999;
 }
 
 .selected .language-info {
