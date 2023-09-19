@@ -5,12 +5,12 @@ import BannerDescription from '@/components/BannerDescription.vue';
 import BannerOverview from '@/components/BannerOverview.vue';
 import { PROJECTS } from '@/contants/projectContants.tsx'
 
-const categories = [
-  { id: '0', title: 'all', img: '/src/assets/images/all.svg', isActive: true },
-  { id: '1', title: 'software', img: '/src/assets/images/soft.svg', isActive: false },
-  { id: '2', title: 'landing page', img: '/src/assets/images/landing.svg', isActive: false },
-  { id: '3', title: 'content', img: '/src/assets/images/content.svg', isActive: false },
-]
+// const categories = [
+//   { id: '0', title: 'all', img: '@/assets/images/all.svg', isActive: true },
+//   { id: '1', title: 'software', img: '@/assets/images/soft.svg', isActive: false },
+//   { id: '2', title: 'landing page', img: '@/assets/images/landing.svg', isActive: false },
+//   { id: '3', title: 'content', img: '@/assets/images/content.svg', isActive: false },
+// ]
 let selectedData = '';
 export default {
   components: {
@@ -24,7 +24,12 @@ export default {
       titleData: 'Projects',
       subheadingData: 'Innovating for Impact',
       imageData: '/src/assets/images/project-banner-image.png',
-      categories,
+      categories: [
+        { id: '0', title: 'all', img: '/src/assets/images/all.svg', isActive: true },
+        { id: '1', title: 'software', img: '/src/assets/images/soft.svg', isActive: false },
+        { id: '2', title: 'landing page', img: '/src/assets/images/landing.svg', isActive: false },
+        { id: '3', title: 'content', img: '/src/assets/images/content.svg', isActive: false },
+      ],
       projects: PROJECTS,
       filterProjects: [],
       selectedData,
@@ -32,11 +37,11 @@ export default {
   },
   methods: {
     selectActive(clickedItem) {
-      categories.forEach(item => item.isActive = false);
+      this.categories.forEach(item => item.isActive = false);
       clickedItem.isActive = true;
       this.filterProjects = [];
-      this.projects.forEach(el =>{
-        if(clickedItem.title === el.cat){
+      this.projects.forEach(el => {
+        if (clickedItem.title === el.cat) {
           this.filterProjects.push(el)
         }
       })
@@ -97,7 +102,7 @@ export default {
       <div class="container projects" v-else>
         <div class="projects__boxes" v-if="filterProjects.length > 0">
           <div v-for="item in filterProjects" :key="item.id" class="projects__box" @click="selectedProject(item)"
-            :style="{ backgroundImage: 'url('+item.project_image + ')' }">
+            :style="{ backgroundImage: 'url(' + item.project_image + ')' }">
           </div>
         </div>
         <div class="projects__boxes" v-else>
