@@ -3,6 +3,11 @@ import BannerProject from '@/components/BannerProject.vue';
 import BannerDisplay from '@/components/BannerDisplay.vue';
 import BannerDescription from '@/components/BannerDescription.vue';
 import BannerOverview from '@/components/BannerOverview.vue';
+import allSvg from  '@/assets/images/all.svg';
+import softSvg from  '@/assets/images/soft.svg';
+import landingSvg from  '@/assets/images/landing.svg';
+import contentSvg from  '@/assets/images/content.svg';
+import projectBannerImage from  '@/assets/images/project-banner-image.png';
 import { PROJECTS } from '@/contants/projectContants.tsx'
 
 // const categories = [
@@ -18,17 +23,22 @@ export default {
     BannerDisplay,
     BannerDescription,
     BannerOverview,
+    allSvg,
+    softSvg,
+    landingSvg,
+    contentSvg,
+    projectBannerImage
   },
   data() {
     return {
       titleData: 'Projects',
       subheadingData: 'Innovating for Impact',
-      imageData: '/src/assets/images/project-banner-image.png',
+      imageData: projectBannerImage,
       categories: [
-        { id: '0', title: 'all', img: '/src/assets/images/all.svg', isActive: true },
-        { id: '1', title: 'software', img: '/src/assets/images/soft.svg', isActive: false },
-        { id: '2', title: 'landing page', img: '/src/assets/images/landing.svg', isActive: false },
-        { id: '3', title: 'content', img: '/src/assets/images/content.svg', isActive: false },
+        { id: '0', title: 'all', img: allSvg, isActive: true },
+        { id: '1', title: 'software', img: softSvg, isActive: false },
+        { id: '2', title: 'landing page', img: landingSvg, isActive: false },
+        { id: '3', title: 'content', img: contentSvg, isActive: false },
       ],
       projects: PROJECTS,
       filterProjects: [],
