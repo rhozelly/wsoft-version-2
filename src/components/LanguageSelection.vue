@@ -1,7 +1,7 @@
 <template>
   <button class="translator-btn" @click="dropdown">
     <div class="flag-wrapper">
-      <img v-bind:src=currentFlagIcon alt="flag">
+      <img v-bind:src="currentLanguage === 'en' ? usFlag : koreanFlag" alt="flag">
     </div>
     {{ currentLanguage }}
   </button>
@@ -20,8 +20,8 @@
   
 <script>
 
-import usFlag from "@/assets/flag/en-flag.png"
-import koreanFlag from "@/assets/flag/kr-flag.png"
+import usFlag from "@/assets/flag/en-flag.png";
+import koreanFlag from "@/assets/flag/kr-flag.png";
 export default {
   data() {
     return {
@@ -39,6 +39,7 @@ export default {
   methods: {
     toggleLanguage() {
       this.currentLanguage = this.currentLanguage === 'en' ? 'kr' : 'en';
+      this.currentFlagIcon = this.currentLanguage === 'en' ? usFlag : koreanFlag;
       this.$i18n.locale = this.currentLanguage;
     },
     dropdown() {
