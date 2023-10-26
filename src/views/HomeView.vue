@@ -128,6 +128,7 @@ window.addEventListener('load', function () { AOS.init(); });
         </div>
       </div><!-- .banner__wrapper-->
     </div><!-- .banner -->
+    
     <div class="service">
       <h2 data-aos="slide-down">{{ $t('service-title') }}</h2>
       <div class="services__wrapper">
