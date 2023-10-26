@@ -5,17 +5,21 @@
   .translate {
     display: none;
   }
+
   .show-list {
     margin: 0;
   }
+
   .header__translate-mobile {
     position: relative;
     width: 135px;
     margin-right: 30px;
   }
+
   .header__navigation-menu-toggle-inner {
     display: flex;
   }
+
   .header__navigation-menu-toggle-wrapper {
     display: block;
     position: relative;
@@ -388,6 +392,17 @@
   .about__banner-two-content:nth-child(3) {
     max-width: 100%;
     left: 0;
+  }
+
+  .description-banner-content li {
+    align-items: start !important;
+    text-align: left !important;
+    font-size: 20px;
+  }
+
+  .description-banner-image__wrapper {
+    max-width: 270px;
+    margin-bottom: 50px;
   }
 }
 
