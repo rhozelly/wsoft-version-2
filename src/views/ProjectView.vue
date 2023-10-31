@@ -71,7 +71,7 @@ export default {
       <div class="container">
         <div class="categories">
           <div class="categories__title" data-aos="slide-down" data-aos-easing="ease-in-out" data-aos-delay="50">
-           {{ $t('explore-our-project') }} <span class="highlight-text"> {{ $t('project') }}</span>
+           {{ $t('explore-our-project') }} <span class="highlight-text"> {{ $t('explore-our-project-highlighted') }}</span>
           </div>
           <div class="categories__selections" data-aos="slide-down" data-aos-easing="ease-in-out" data-aos-delay="50">
             <div class="categories__button" v-for="item in categories" :key="item.id" @click="selectActive(item)"

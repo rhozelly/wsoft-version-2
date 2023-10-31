@@ -85,9 +85,10 @@
   "mission-description": "우리는 교육자와 학습자에게 성공하는 데 필요한 도구를 제공하고 기술을 통해 가능한 것의 경계를 지속적으로 확장하기 위해 최선을 다하고 있습니다.",
   "vision": "비전",
   "vision-description": "우리의 비전은 비즈니스 운영 방식을 변화시키는 최첨단 기술 솔루션을 제공하는 글로벌 리더가 되는 것입니다. 우리는 최신 기술에 투자하고 혁신 문화를 조성하며 고객에게 탁월한 가치를 지속적으로 제공함으로써 이를 달성할 것입니다.",
-  "project": "프로젝트 프로젝트 소개",
-  "project-description": "",
-  "explore-our-project": "프로젝트 살펴보기 프로젝트",
+  "project": "프로젝트",
+  "project-description": "영향력 확대를 위한 혁신적인 서비스",
+  "explore-our-project": " ",
+  "explore-our-project-highlighted": "프로젝트 살펴보기",
   "project-categories": [
     {
       "id": "0",
