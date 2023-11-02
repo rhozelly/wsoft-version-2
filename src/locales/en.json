@@ -210,6 +210,24 @@
       "project_description_sub_content": "",
       "project_overview_image": "screenshots/digigooz-overview.png",
       "project_overview_content": ""
+    },
+    {
+      "id": 8,
+      "project_name": "E-Learning Platform",
+      "cat": "software",
+      "project_image": "screenshots/mega-featured.png",
+      "project_description_image": "screenshots/mega-description-image.png",
+      "project_description_content": [
+        "Course Creation and Management",
+        "Content Delivery",
+        "Integration Capabilities",
+        "Diverse Course Catalog",
+        "Interactive Learning",
+        "Communication and Collaboration"
+      ],
+      "project_description_sub_content": "A new way of mastering the English language with E-Learning Platform. Learning English just got a whole lot easier, more engaging, and, dare we say, fun! Imagine a place where you can improve your English skills at your own pace, on your own schedule. That's exactly what is all about. No more rigid classroom hours. Learn when it suits you best.",
+      "project_overview_image": "screenshots/mega-overview.png",
+      "project_overview_content": "Dive into dynamic lessons, engaging videos, and interactive exercises designed to make learning a breeze."
     }
   ]
 }

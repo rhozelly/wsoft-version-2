@@ -211,6 +211,24 @@
       "project_description_sub_content": "",
       "project_overview_image": "/src/assets/screenshots/digigooz-overview.png",
       "project_overview_content": ""
+    },
+    {
+      "id": 8,
+      "project_name": "E-Learning Platform",
+      "cat": "software",
+      "project_image": "screenshots/mega-featured.png",
+      "project_description_image": "screenshots/mega-description-image.png",
+      "project_description_content": [
+        "강좌 생성 및 관리",
+        "콘텐츠 전달",
+        "통합 기능",
+        "다양한 강좌 목록",
+        "상호 작용 학습",
+        "소통과 협업"
+      ],
+      "project_description_sub_content": "온라인 학습 플랫폼을 통한 영어 마스터링의 새로운 방법. 영어 학습이 더욱 쉽고 매력적이며, 우리가 말할까요, 즐겁게 된 것을 상상해보세요! 자신의 속도와 일정에 맞춰 영어 실력을 향상시킬 수 있는 곳, 그것이 정확히 무엇인지 알아보세요. 더 이상 엄격한 교실 시간이 없습니다. 가장 편한 때에 배우세요",
+      "project_overview_image": "screenshots/mega-overview.png",
+      "project_overview_content": "환상적인 수업, 매력적인 동영상, 그리고 학습을 쉽게 만들도록 디자인된 상호 작용 연습에 몰두하세요"
     }
   ]
 }
