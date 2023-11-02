@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import router from '@/router';
 import AOS from 'aos';
-import { PROJECTS } from '@/contants/projectContants.tsx';
+import { PROJECTS } from '@/contants/projectContants';
 
 
 function navigateTo(data: any) {

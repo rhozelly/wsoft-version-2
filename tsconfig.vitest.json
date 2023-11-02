@@ -11,6 +11,7 @@
     "types": [
       "node",
       "jsdom",
+      "vite/client",
     ],
     "allowJs": true,
     "target": "ESNext",
