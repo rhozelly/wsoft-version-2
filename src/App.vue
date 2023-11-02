@@ -137,14 +137,14 @@ function scrollToTop() {
               <h4 class="footer__widget-title">Follow Us</h4>
               <ul class="footer__social-links">
                 <li class="footer__social-link-item">
-                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.facebook.com/wsoft.kr"><i class="fab fa-facebook"></i></a>
                 </li>
                 <li class="footer__social-link-item">
-                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/wsoft.space"><i class="fab fa-instagram"></i></a>
                 </li>
-                <li class="footer__social-link-item">
-                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                </li>
+                <!-- <li class="footer__social-link-item">
+                  <a href="#"><i class="fab fa-tiktok"></i></a>
+                </li> -->
               </ul>
             </div><!-- .footer__widget-->
           </div><!-- .footer__widget -->
