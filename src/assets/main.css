@@ -141,10 +141,12 @@ Global
 .margin-not-center {
   margin: 15px 0 !important;
 }
+
 .nav-link-text {
   display: block;
   position: relative;
 }
+
 .nav-link-text::after {
   content: "";
   width: 0%;
@@ -157,6 +159,7 @@ Global
   -moz-transition: width 0.5s ease 0s;
   transition: width 0.5s ease 0s;
 }
+
 .nav-link-text.nav-active::after,
 .header__navigation-menu-list-item:hover .nav-link-text::after {
   width: 100%;
@@ -217,12 +220,18 @@ Header
   margin: 0;
   color: #000000;
 }
+
 .header__navigation-menu-list li {
   position: relative;
 }
+
 .translate {
   max-width: 140px;
   width: 100%;
+}
+
+.row {
+  margin-bottom: 25px;
 }
 
 /*------------------------------------------
@@ -245,7 +254,7 @@ Footer
 
 .footer__widget {
   width: 100%;
-  padding: 0 40px;
+  padding: 0 40px 0 0;
 }
 
 .footer__widget-1 {
@@ -952,10 +961,11 @@ Mission Visio CSS
   justify-content: space-between;
   align-items: center;
 }
-.categories{
-  margin-bottom: 24px
 
+.categories {
+  margin-bottom: 24px
 }
+
 .categories__selections {
   display: flex;
   flex-direction: row;
@@ -1073,13 +1083,16 @@ Mission Visio CSS
   top: 0;
   left: 0;
 }
-.project-overview{
+
+.project-overview {
   /* background: #F6F8FF; */
   /* padding-top: 24px; */
 }
+
 .featured {
   position: relative;
 }
+
 .featured__btn {
   background-color: rgba(56, 107, 240, 0.11);
   border: 0 none;
@@ -1095,21 +1108,25 @@ Mission Visio CSS
   cursor: pointer;
   transition: all 0.5s ease 0s;
 }
+
 .featured__btn:hover {
   background-color: rgba(56, 107, 240, 1);
   color: #ffffff;
 }
-.projects__wrapper{
+
+.projects__wrapper {
   display: flex;
   flex-direction: column;
 
 }
-.project__title{
+
+.project__title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+
 button.project__explore {
   border: none;
   background: none;
@@ -1128,6 +1145,7 @@ button.project__explore {
   align-items: center;
   gap: 25px;
 }
+
 button.project__explore:hover {
   background: #f6f8fe;
   padding: 9px 25px;

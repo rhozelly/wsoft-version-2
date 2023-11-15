@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView, useRoute, useRouter} from 'vue-router'
+import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router'
 import { reactive } from 'vue'
 import LanguageSelector from './components/LanguageSelection.vue';
 const mobile = reactive({
@@ -97,9 +97,9 @@ function scrollToTop() {
           <div class="footer__widget footer__widget-2">
             <div class="footer__company-details">
               <div class="footer__company-detail-item">
-                <h5>Company Address</h5>
+                <h5>COMPANY ADDRESS</h5>
                 <span>경기 수원시 권선구 세권로 219 3층</span>
-              </div><!-- .footer__company-detail-item -->
+              </div>
               <div class="footer__company-detail-item">
                 <h5>대표</h5>
                 <span>정원석 (Matt Jung)</span>
@@ -110,44 +110,60 @@ function scrollToTop() {
               </div><!-- .footer__company-detail-item -->
             </div><!-- .footer__company-details -->
           </div><!-- .footer__widget -->
-          <div class="footer__widget footer__widget-3">
-            <div class="footer__links">
-              <h4 class="footer__widget-title">Links</h4>
-              <ul class="footer__menu-links">
-                <li class="footer__menu-link-item">
-                  <a href="#">
-                    <RouterLink @click="scrollToTop" to="/">Home</RouterLink>
-                  </a>
-                </li>
-                <li class="footer__menu-link-item">
-                  <a href="#">
-                    <RouterLink @click="scrollToTop" to="/about">Our Company</RouterLink>
-                  </a>
-                </li>
-                <li class="footer__menu-link-item">
-                  <a href="#">
-                    <RouterLink @click="scrollToTop" to="/contact">Contact Us</RouterLink>
-                  </a>
-                </li>
-              </ul>
-            </div><!-- .footer__links -->
-          </div><!-- .footer__widget -->
-          <div class="footer__widget footer__widget-4">
-            <div class="footer__social">
-              <h4 class="footer__widget-title">Follow Us</h4>
-              <ul class="footer__social-links">
-                <li class="footer__social-link-item">
-                  <a href="https://www.facebook.com/wsoft.kr"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li class="footer__social-link-item">
-                  <a href="https://www.instagram.com/wsoft.space"><i class="fab fa-instagram"></i></a>
-                </li>
-                <!-- <li class="footer__social-link-item">
+
+          <div class="column">
+            <div class="row">
+              <div class="footer__widget footer__widget-3">
+                <div class="footer__links">
+                  <h4 class="footer__widget-title">Links</h4>
+                  <ul class="footer__menu-links">
+                    <li class="footer__menu-link-item">
+                      <a href="#">
+                        <RouterLink @click="scrollToTop" to="/">Home</RouterLink>
+                      </a>
+                    </li>
+                    <li class="footer__menu-link-item">
+                      <a href="#">
+                        <RouterLink @click="scrollToTop" to="/about">Our Company</RouterLink>
+                      </a>
+                    </li>
+                    <li class="footer__menu-link-item">
+                      <a href="#">
+                        <RouterLink @click="scrollToTop" to="/contact">Contact Us</RouterLink>
+                      </a>
+                    </li>
+                  </ul>
+
+                </div><!-- .footer__links -->
+              </div><!-- .footer__widget -->
+              <div class="footer__widget footer__widget-4">
+                <div class="footer__social">
+                  <h4 class="footer__widget-title">Follow Us</h4>
+                  <ul class="footer__social-links">
+                    <li class="footer__social-link-item">
+                      <a href="https://www.facebook.com/wsoft.kr"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="footer__social-link-item">
+                      <a href="https://www.instagram.com/wsoft.space"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <!-- <li class="footer__social-link-item">
                   <a href="#"><i class="fab fa-tiktok"></i></a>
                 </li> -->
-              </ul>
-            </div><!-- .footer__widget-->
-          </div><!-- .footer__widget -->
+                  </ul>
+                </div>
+                <!-- .footer__widget-->
+
+
+              </div><!-- .footer__widget -->
+            </div>
+            <div class="footer__company-detail-item">
+              <h5>Company</h5>
+              <span>(주) 유에듀케이션 | 사업자등록번호 : 124-87-33297</span>
+            </div><!-- .footer__company-detail-item -->
+
+          </div>
+
+
         </div><!-- .container -->
       </div><!-- .footer__widgets -->
       <div class="footer__bottom">
