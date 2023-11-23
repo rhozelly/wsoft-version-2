@@ -2,6 +2,7 @@
 import router from '@/router';
 import AOS from 'aos';
 import { PROJECTS } from '@/contants/projectContants';
+import video from '@/assets/video/banner-video.mp4';
 
 
 function navigateTo(data: any) {
@@ -106,7 +107,9 @@ const additionalServices = [
               권한 및 등급관리`
   },
 ]
-
+let src = video;
+let type = 'video/mp4';
+let width = '100%';
 window.addEventListener('load', function () { AOS.init(); });
 
 </script>
@@ -115,7 +118,16 @@ window.addEventListener('load', function () { AOS.init(); });
   <main id="content" class="primary-content home">
     <div class="banner">
       <div class="banner__wrapper">
-        <h1 class="banner__heading" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50">{{
+        <div class="video-background">
+          <video autoplay muted loop id="video-bg">
+            <source :src="src" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="content">
+            <!-- Your other content goes here -->
+          </div>
+        </div>
+        <!-- <h1 class="banner__heading" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50">{{
           $t('banner-title') }}<span class="highlight"></span></h1>
         <h2 class="banner__subheading" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="80"> {{
           $t('banner-sub-title') }}</h2>
@@ -125,10 +137,10 @@ window.addEventListener('load', function () { AOS.init(); });
           class="banner__btn default-btn btn-center"> {{ $t('inquire-now') }}</RouterLink>
         <div class="banner__img">
           <img src="../assets/images/banner-bg-image.jpg" alt="banner">
-        </div>
-      </div><!-- .banner__wrapper-->
+        </div> -->
+      </div>
     </div><!-- .banner -->
-    
+
     <div class="service">
       <h2 data-aos="slide-down">{{ $t('service-title') }}</h2>
       <div class="services__wrapper">
@@ -194,7 +206,8 @@ window.addEventListener('load', function () { AOS.init(); });
         </div>
         <div class="project__content">
           <div class="projects__boxes" data-aos-easing="ease-in-out" data-aos-delay="50">
-            <div v-for="item in projects" :key="item.id" class="projects__box" v-on:click="navigateTo('projects')" :style="{ 'background-image': 'url(' + item.project_image + ')' }">
+            <div v-for="item in projects" :key="item.id" class="projects__box" v-on:click="navigateTo('projects')"
+              :style="{ 'background-image': 'url(' + item.project_image + ')' }">
               <!-- + item.project_image +  -->
             </div>
           </div>
@@ -217,3 +230,21 @@ window.addEventListener('load', function () { AOS.init(); });
     </div>
   </main>
 </template>
+<style scoped>
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+#video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>

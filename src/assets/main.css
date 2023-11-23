@@ -169,7 +169,13 @@ Global
 Header
 ------------------------------------------*/
 .header {
-  padding: 25px;
+  padding: 12px 25px;
+  /* position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background: rgb(255 240 240 / 10%);
+  backdrop-filter: blur(2.6500000953674316px); */
 }
 
 .header__logo {
@@ -347,7 +353,7 @@ Pages
 - Home
 -----------------*/
 .banner {
-  padding: 100px 25px 20px;
+  /* padding: 100px 25px 20px; */
 }
 
 .banner__heading {

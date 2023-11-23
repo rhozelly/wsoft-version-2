@@ -32,7 +32,7 @@ export default {
         { label: 'Korean', icon: koreanFlag, value: 'kr', active: true },
       ],
       usFlag,
-      koreanFlag,      
+      koreanFlag,
       currentFlagIcon: this.$i18n.locale === 'en' ? usFlag : koreanFlag,
     };
   },
@@ -63,7 +63,6 @@ export default {
 </script>
 
 <style scoped>
-
 .translator-btn {
   display: flex;
   border: 0 none;
@@ -75,9 +74,11 @@ export default {
   cursor: pointer;
   float: right;
 }
+
 .translator-list {
   display: none;
 }
+
 .translator-list li {
   cursor: pointer;
 }
@@ -88,7 +89,7 @@ export default {
   padding: 0;
   position: absolute;
   background-color: #ffffff;
-  box-shadow: 1px 2px 3px 2px rgba(0,0,0,0.2);
+  box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   top: 50px;
   right: 0;
@@ -96,8 +97,9 @@ export default {
 }
 
 .selected .language-info {
-  background-color: rgba(94,86,105,.1);
+  background-color: rgba(94, 86, 105, .1);
 }
+
 .language-info {
   display: flex;
   align-items: center;
@@ -109,15 +111,15 @@ export default {
 .language-flag {
   max-width: 25px;
 }
+
 .lang-name {
   display: block;
-    font-weight: 300;
-    color: #999;
-    width: 100%;
+  font-weight: 300;
+  color: #999;
+  width: 100%;
 }
 
 
 .flag-wrapper {
   max-width: 30px;
-}
-</style>
+}</style>
