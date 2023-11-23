@@ -6,6 +6,13 @@
     display: none;
   }
 
+  #video-bg {
+    display: none;
+  }
+  .video-background {
+    height: 0px !important;
+  }
+
   .show-list {
     margin: 0;
   }

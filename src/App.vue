@@ -15,6 +15,9 @@ const navs = [
   { active: false, to: '/projects', label: 'Projects', key: 3 },
   { active: false, to: '/contact', label: 'Contact Us', key: 4 }
 ]
+
+//console.log(window.scrollY);
+
 // console.log(router?.currentRoute.params);
 
 // navs.forEach(el => {
