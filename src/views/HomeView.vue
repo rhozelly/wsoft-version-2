@@ -142,13 +142,18 @@ window.addEventListener('load', function () { AOS.init(); });
     </div><!-- .banner -->
 
     <div class="service">
-      <h2 data-aos="slide-down">{{ $t('service-title') }}</h2>
-      <div class="services__wrapper">
-        <div class="services__box" v-for="(item, key, index) in 5" :key="item" data-aos="fade-in"
-          data-aos-easing="ease-in-out" data-aos-once="false">
-          <img class="services__img" v-bind:src="$t('services.' + key + '.img')" width="60">
-          <span class="services__title">{{ $t('services.' + key + '.title') }}</span>
-          <span class="services__content">{{ $t('services.' + key + '.content') }}</span>
+      <div class="service-container">
+        <div class="service-headings">
+          <span>{{ $t('service-title') }}</span>
+          <p>{{ $t('service-description') }}</p>
+        </div>
+        <div class="services__wrapper">
+          <div class="services__box" v-for="(item, key, index) in 5" :key="item" data-aos="fade-in"
+            data-aos-easing="ease-in-out" data-aos-once="false">
+            <img class="services__img" v-bind:src="$t('services.' + key + '.img')" width="60">
+            <span class="services__title">{{ $t('services.' + key + '.title') }}</span>
+            <span class="services__content">{{ $t('services.' + key + '.content') }}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -199,14 +204,16 @@ window.addEventListener('load', function () { AOS.init(); });
       <div class="projects__wrapper">
         <div class="project__title">
           <h2 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50"> {{ $t('project-title') }}</h2>
-          <button class="project__explore" v-on:click="navigateTo('projects')">
+          <button data-aos="fade-down" data-aos-easing="ease-in-out" class="project__explore"
+            v-on:click="navigateTo('projects')">
             <span> {{ $t('explore') }}</span>
             <img src="/src/assets/images/explore.svg" alt="explore">
           </button>
         </div>
         <div class="project__content">
-          <div class="projects__boxes" data-aos-easing="ease-in-out" data-aos-delay="50">
-            <div v-for="item in projects" :key="item.id" class="projects__box" v-on:click="navigateTo('projects')"
+          <div class="projects__boxes">
+            <div data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50" v-for="item in projects"
+              :key="item.id" class="projects__box" v-on:click="navigateTo('projects')"
               :style="{ 'background-image': 'url(' + item.project_image + ')' }">
               <!-- + item.project_image +  -->
             </div>

@@ -347,6 +347,43 @@ Footer
 }
 
 /*------------------------------------------
+Headings
+------------------------------------------*/
+.service-container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.service-headings {
+  margin-top: 114px;
+  display: flex;
+  width: 676px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.service-headings span {
+  color: #2B61EF;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133.1%;
+  text-transform: capitalize;
+}
+
+.service-headings p {
+  color: #1E1E1E;
+  font-family: Plus Jakarta Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133.1%;
+}
+
+/*------------------------------------------
 Pages
 ------------------------------------------*/
 /*-----------------
@@ -488,17 +525,23 @@ Pages
 - Services
 -----------------*/
 .service {
-  background: #F6F8FF;
-  padding: 66px 25px;
+  background-image: url('@/assets/bg-services.png');
+  background-size: cover;
+  width: 100%;
+  height: 1203px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .services__wrapper {
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 756px;
+  /* margin: 0 auto; */
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   /* align-items: stretch; */
   flex-wrap: wrap;
 }
@@ -509,9 +552,9 @@ Pages
   width: 100%;
   max-width: 348px;
   padding: 57px 20px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
   display: flex;
   flex-direction: column;
 }
@@ -530,16 +573,13 @@ Pages
 }
 
 .services__title {
-  font-family: 'Titillium Web';
+  color: #1E1E1E;
+  font-family: Titillium Web;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
   line-height: 133.1%;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  color: #2B61EF;
-  margin-bottom: 10px;
+  text-transform: capitalize;
 }
 
 .services__content {
@@ -1061,7 +1101,7 @@ Mission Visio CSS
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  gap: 12px;
+  gap: 50px;
 }
 
 .projects__box {
