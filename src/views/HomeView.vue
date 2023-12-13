@@ -150,7 +150,7 @@ window.addEventListener('load', function () { AOS.init(); });
         <div class="services__wrapper">
           <div class="services__box" v-for="(item, key, index) in 5" :key="item" data-aos="fade-in"
             data-aos-easing="ease-in-out" data-aos-once="false">
-            <img class="services__img" v-bind:src="$t('services.' + key + '.img')" width="60">
+            <img class="services__img" v-bind:src="$t('services.' + key + '.img')" width="90">
             <span class="services__title">{{ $t('services.' + key + '.title') }}</span>
             <span class="services__content">{{ $t('services.' + key + '.content') }}</span>
           </div>
