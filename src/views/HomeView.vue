@@ -212,7 +212,7 @@ window.addEventListener('load', function () { AOS.init(); });
         </div>
         <div class="project__content">
           <div class="projects__boxes">
-            <div data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="50" v-for="item in projects"
+            <div data-aos="zoom-out-down" data-aos-easing="ease-in-out" data-aos-delay="50" v-for="item in projects"
               :key="item.id" class="projects__box" v-on:click="navigateTo('projects')"
               :style="{ 'background-image': 'url(' + item.project_image + ')' }">
               <!-- + item.project_image +  -->
