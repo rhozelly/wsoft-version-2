@@ -2,14 +2,16 @@
 import router from '@/router';
 import AOS from 'aos';
 import { PROJECTS } from '@/contants/projectContants';
+import { SERVICES_ICON } from '@/contants/iconServicesConstants';
 import video from '@/assets/video/banner-video.mp4';
-
 
 function navigateTo(data: any) {
   router.push({ path: `${data}`, replace: true });
   window.scrollTo(0, 0);
 }
 let projects = PROJECTS.slice(0, 6);
+let services_icon = SERVICES_ICON.slice(0, 6);
+console.log(services_icon);
 
 const additionalServices = [
   {
@@ -140,7 +142,6 @@ window.addEventListener('load', function () { AOS.init(); });
         </div> -->
       </div>
     </div><!-- .banner -->
-
     <div class="service">
       <div class="service-container">
         <div class="service-headings">
@@ -150,7 +151,8 @@ window.addEventListener('load', function () { AOS.init(); });
         <div class="services__wrapper">
           <div class="services__box" v-for="(item, key, index) in 5" :key="item" data-aos="fade-in"
             data-aos-easing="ease-in-out" data-aos-once="false">
-            <img class="services__img" v-bind:src="$t('services.' + key + '.img')" width="90">
+            <img class="services__img" v-bind:src="services_icon[key].img" width="90"
+              v-alt="$t('services.' + key + '.title')">
             <span class="services__title">{{ $t('services.' + key + '.title') }}</span>
             <span class="services__content">{{ $t('services.' + key + '.content') }}</span>
           </div>
@@ -235,6 +237,7 @@ window.addEventListener('load', function () { AOS.init(); });
     </div>
   </main>
 </template>
+
 <style scoped>
 .video-background {
   position: relative;
