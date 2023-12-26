@@ -357,7 +357,8 @@ Headings
 .service-headings {
   margin-top: 114px;
   display: flex;
-  width: 676px;
+  width: 100%;
+  /* max-width: 676px; */
   flex-direction: column;
   align-items: flex-start;
   gap: 25px;
@@ -751,7 +752,8 @@ Pages
 }
 
 .about__banner-image img {
-  width: 649px;
+  width: 100%;
+  max-width: 649px;
 }
 
 .about__banner-two {
@@ -857,7 +859,8 @@ Mission Visio CSS
 }
 
 .mission__image-wrapper img {
-  width: 433px;
+  width: 100%;
+  max-width: 433px;
 }
 
 .mission__content-box:first-child {

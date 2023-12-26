@@ -9,6 +9,11 @@
   #video-bg {
     display: none;
   }
+
+  .service-container {
+    padding: 0 60px 10px 60px;
+  }
+
   .video-background {
     height: 0px !important;
   }
@@ -19,7 +24,8 @@
 
   .header__translate-mobile {
     position: relative;
-    width: 135px;
+    width: 100%;
+    max-width: 135px;
     margin-right: 30px;
   }
 
@@ -143,7 +149,7 @@
   }
 
   .banner__img {
-    max-width: 750px;
+    /* max-width: 768px; */
     margin: -13px auto 0;
   }
 
@@ -275,8 +281,9 @@
   }
 
   .projects__box {
-    width: 100%;
+    width: 80%;
     flex: none;
+    margin: 0 auto;
   }
 
   .project-banner,
@@ -416,7 +423,11 @@
 /*------------------------------------------
 480px
 ------------------------------------------*/
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+  .additional {
+    max-width: 480px;
+  }
+}
 
 /*------------------------------------------
 414px
