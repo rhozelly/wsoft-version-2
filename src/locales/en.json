@@ -20,27 +20,27 @@
   "cta-description": "We are committed to providing excellent customer service and building long-term partnerships with our clients.",
   "services": [
     {
-      "img": "src/assets/services/wd-icon-1.png",
+      "img": "/src/assets/services/wd-icon-1.png",
       "title": "WEBSITE DEVELOPMENT",
       "content": "Expert web development services for businesses of all sizes"
     },
     {
-      "img": "src/assets/services/wad-icon-1.png",
+      "img": "/src/assets/services/wad-icon-1.png",
       "title": "WEB APPLICATION DEVELOPMENT",
       "content": "Innovative web app solutions to power your business"
     },
     {
-      "img": "src/assets/services/ui-icon-1.png",
+      "img": "/src/assets/services/ui-icon-1.png",
       "title": "UI DESIGN",
       "content": "Crafting intuitive, user-friendly interfaces for a better digital world"
     },
     {
-      "img": "src/assets/services/ai-icon-1.png",
+      "img": "/src/assets/services/ai-icon-1.png",
       "title": "ARTIFICIAL INTELLIGENCE UTILIZATION SERVICE",
       "content": "Reduce customer service costs, improve response times, and increase customer satisfaction"
     },
     {
-      "img": "src/assets/services/services-1.png",
+      "img": "/src/assets/services/services-1.png",
       "title": "MAINTENANCE",
       "content": "We make website maintenance easy and hassle-free"
     }
