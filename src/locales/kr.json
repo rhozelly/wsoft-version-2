@@ -20,12 +20,12 @@
   "cta-description": "우리는 우수한 고객 서비스를 제공하고 고객과 장기적인 파트너십을 구축하기 위해 최선을 다하고 있습니다.",
   "services": [
     {
-      "img": "/src/assets/services/wd-icon-1.png",
+      "img": "@/services/wd-icon-1.png",
       "title": "웹사이트 개발",
       "content": "모든 규모의 기업을 위한 전문 웹 개발 서비스"
     },
     {
-      "img": "/src/assets/services/wad-icon-1.png",
+      "img": "@/services/wad-icon-1.png",
       "title": "웹 애플리케이션 개발",
       "content": "귀하의 비즈니스를 강화하는 혁신적인 웹 앱 솔루션"
     },
@@ -94,25 +94,25 @@
     {
       "id": "0",
       "title": "모두",
-      "img": "src/assets/images/all.svg",
+      "img": "/src/assets/images/all.svg",
       "isActive": "true"
     },
     {
       "id": "1",
       "title": "소프트웨어",
-      "img": "src/assets/images/soft.svg",
+      "img": "/src/assets/images/soft.svg",
       "isActive": "false"
     },
     {
       "id": "2",
       "title": "방문 페이지",
-      "img": "src/assets/images/landing.svg",
+      "img": "/src/assets/images/landing.svg",
       "isActive": false
     },
     {
       "id": "3",
       "title": "콘텐츠",
-      "img": "src/assets/images/content.svg",
+      "img": "/src/assets/images/content.svg",
       "isActive": "false"
     }
   ],
