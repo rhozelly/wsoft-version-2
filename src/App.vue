@@ -28,12 +28,16 @@ const navs = [
 function openMobileMenu() {
   mobile.isActive = 'active'
 }
+
 function closeMobileMenu(x: any) {
+  console.log(mobile.isActive);
+  
   navs.forEach(item => item.active = false);
   navs[x].active = true;
   mobile.isActive = 'close';
   window.scrollTo(0, 0);
 }
+
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
@@ -57,8 +61,7 @@ function scrollToTop() {
             <button class="header__navigation-menu-toggle-btn" @click="openMobileMenu" v-if="mobile.isActive == 'close'">
               <i class="fas fa-bars"></i>
             </button>
-            <button class="header__navigation-menu-toggle-btn" @click="closeMobileMenu"
-              v-if="mobile.isActive == 'active'">
+            <button class="header__navigation-menu-toggle-btn" @click="mobile.isActive = 'close'" v-if="mobile.isActive == 'active'">
               <i class="fas fa-times"></i>
             </button>
           </div>
