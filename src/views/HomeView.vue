@@ -187,8 +187,6 @@ window.addEventListener('load', function () { AOS.init(); });
             data-aos-delay="70">
             {{ $t('about-description') }}
           </h2>
-          <!-- <h2 class="about__heading" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="false"
-            data-aos-delay="90">{{ $t('about-description-two') }}</h2> -->
           <p class="about__text" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="false"
             data-aos-delay="120">
             {{ $t('about-sub-description') }}
