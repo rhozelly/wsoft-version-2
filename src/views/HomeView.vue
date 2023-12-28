@@ -11,7 +11,6 @@ function navigateTo(data: any) {
 }
 let projects = PROJECTS.slice(0, 6);
 let services_icon = SERVICES_ICON.slice(0, 6);
-console.log(services_icon);
 
 const additionalServices = [
   {
