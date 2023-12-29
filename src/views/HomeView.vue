@@ -3,7 +3,7 @@ import router from '@/router';
 import AOS from 'aos';
 import { PROJECTS } from '@/contants/projectContants';
 import { SERVICES_ICON } from '@/contants/iconServicesConstants';
-import video from '@/assets/video/banner-video.mp4';
+import video from '@/assets/video/video-banner.mp4';
 
 function navigateTo(data: any) {
   router.push({ path: `${data}`, replace: true });
