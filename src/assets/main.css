@@ -538,10 +538,10 @@ Pages
 
 .services__wrapper {
   width: 100%;
-  max-width: 756px;
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  align-items: center;
+  justify-content: center;
   gap: 60px;
   flex-wrap: wrap;
 }
@@ -550,9 +550,9 @@ Pages
   width: 100%;
   max-width: 348px;
   padding: 57px 20px;
-  justify-content: start;
-  align-items: start;
-  text-align: start;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   display: flex;
   flex-direction: column;
 }
