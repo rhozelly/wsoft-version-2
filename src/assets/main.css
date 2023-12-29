@@ -1098,7 +1098,7 @@ Mission Visio CSS
 .projects__box {
   border-radius: 20px;
   position: relative;
-  flex: 0 0 calc(33.33% - 10px);
+  flex: 0 0 calc(30.33% - 10px);
   height: 332px;
   background-position: center center;
   background-repeat: no-repeat;
