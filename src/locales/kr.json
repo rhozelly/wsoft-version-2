@@ -5,9 +5,9 @@
   "banner-sub-title": "우리에게는 임무가 있습니다.",
   "banner-description": "우리의 귀사의 비즈니스에 생산성과 편리성을 더 할 수 있는 전문도구 제공합니다.우리는 단순한 소프트웨어 개발사가 아닙니다. 우리는 문제 해결사입니다.",
   "inquire-now": "지금 문의하세요",
-  "service-title": "우리가 제공하는 서비스는 다음과 같습니다:",
+  "service-title": "우리가 제공하는 서비스는 \n 다음과 같습니다:",
   "service-sub-title": "세부기능 제공 서비스",
-  "service-description": "WSOFT는 혁신적인 솔루션을 제공하여 기업이 영업 최적화하고 목표를 달성할 수 있도록 헌신하는 최첨단 IT 기업입니다.",
+  "service-description": "W Soft는 혁신적인\n솔루션을 제공하여\n기업이 영업을 최적화하고\n목표를 달성할 수 있도록\n헌신하는 최첨단\nIT기업입니다.",
   "additionally": "다음과 같은 세부기능을 제공합니다.",
   "about-title": "회사 소개",
   "about-description": "WSOFT는 귀사의 비즈니스의 운영 최적화와 목표 달성을 위한 혁신적인 솔루션을 제공하기 위해 노력합니다. 단순한 소프트웨어 개발사가 아닙니다. 우리는 문제해결사 입니다.",
@@ -22,12 +22,12 @@
     {
       "img": "@/services/wd-icon-1.png",
       "title": "웹사이트 개발",
-      "content": "모든 규모의 기업을 위한 전문 웹 개발 서비스"
+      "content": "모든 규모의 기업을 위한 전문 \n 웹 개발 서비스"
     },
     {
       "img": "@/services/wad-icon-1.png",
       "title": "웹 애플리케이션 개발",
-      "content": "귀하의 비즈니스를 강화하는 혁신적인 웹 앱 솔루션"
+      "content": "귀하의 비즈니스를 강화하는  \n 혁신적인 웹 앱 솔루션"
     },
     {
       "img": "/src/assets/services/ui-icon-1.png",
@@ -37,12 +37,12 @@
     {
       "img": "/src/assets/services/ai-icon-1.png",
       "title": "인공지능 활용 서비스",
-      "content": "고객 서비스 비용 절감, 응답 시간 개선, 고객 만족도 향상"
+      "content": "고객 서비스 비용 절감, \n  응답 시간 개선, 고객 만족도 향상"
     },
     {
       "img": "/src/assets/services/services-1.png",
       "title": "유지보수",
-      "content": "우리는 웹사이트 유지 관리를 쉽고 번거롭지 않게 만듭니다."
+      "content": "우리는 웹사이트 유지 관리를 \n 쉽고 번거롭지 않게 만듭니다."
     }
   ],
   "about": {
