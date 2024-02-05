@@ -382,6 +382,7 @@ Headings
   font-style: normal;
   font-weight: 700;
   line-height: 133.1%;
+  white-space: pre-line;
 }
 
 /*------------------------------------------
@@ -520,6 +521,7 @@ Pages
   line-height: 200%;
   text-transform: uppercase;
   color: #6E6E6E;
+  white-space: pre-line;
 }
 
 /*-----------------
