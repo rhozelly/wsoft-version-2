@@ -2,9 +2,14 @@
 992px
 ------------------------------------------*/
 @media screen and (max-width: 992px) {
+  .additional__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .translate {
     display: none;
-  } 
+  }
+
   .projects__box {
     flex: 0 0 calc(47% - 10px);
   }
@@ -86,6 +91,7 @@
   }
 
   .services__wrapper {
+    padding-bottom: 40px;
     max-width: 1060px;
     gap: 20px;
   }
@@ -329,9 +335,29 @@
 540px
 ------------------------------------------*/
 @media screen and (max-width: 540px) {
+  .additional__box-col {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .additional__box {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
 
   .additional__wrapper {
     grid-template-columns: repeat(1, 1fr);
+    gap: 70px;
+  }
+
+  .about__banner-two-content {
+    border: 1px solid grey;
   }
 
   br {
