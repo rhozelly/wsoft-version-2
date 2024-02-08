@@ -360,8 +360,10 @@ Headings
   width: 100%;
   /* max-width: 676px; */
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  align-items: center;
   gap: 25px;
+  padding-bottom: 120px;
 }
 
 .service-headings span {
@@ -383,6 +385,7 @@ Headings
   font-weight: 700;
   line-height: 133.1%;
   white-space: pre-line;
+  text-align: center;
 }
 
 /*------------------------------------------
