@@ -26,7 +26,7 @@ img {
 
 p,
 span,
-h2, h1, h3, h4 {
+h2, h1, h3, h4, div {
   word-break: keep-all;
 }
 
@@ -1056,7 +1056,7 @@ Mission Visio CSS
 }
 
 .highlight-text {
-  font-weight: 700 !important
+  font-weight: 700 !important;
 }
 
 .categories {
