@@ -24,6 +24,11 @@ img {
   height: auto;
 }
 
+p,
+span {
+  word-break: keep-all;
+}
+
 /*------------------------------------------
 Typography
 ------------------------------------------*/
@@ -364,6 +369,7 @@ Headings
   align-items: center;
   gap: 25px;
   padding-bottom: 120px;
+  word-break: keep-all;
 }
 
 .service-headings span {
@@ -375,6 +381,7 @@ Headings
   font-weight: 700;
   line-height: 133.1%;
   text-transform: capitalize;
+  word-break: keep-all;
 }
 
 .service-headings p {
@@ -386,6 +393,7 @@ Headings
   line-height: 133.1%;
   white-space: pre-line;
   text-align: center;
+  word-break: keep-all;
 }
 
 /*------------------------------------------
@@ -445,6 +453,7 @@ Pages
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  word-break: keep-all;
 }
 
 .additional__wrapper {
@@ -574,6 +583,7 @@ Pages
   font-weight: 700;
   line-height: 133.1%;
   text-transform: capitalize;
+  word-break: keep-all;
 }
 
 .services__content {
@@ -585,6 +595,7 @@ Pages
   display: flex;
   align-items: center;
   color: #6E6E6E;
+  word-break: keep-all;
 }
 
 .about-us {
