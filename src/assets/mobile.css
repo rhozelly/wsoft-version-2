@@ -303,6 +303,7 @@
 
   .categories__title {
     padding-bottom: 12px;
+    text-align: center;
   }
 
   .description-banner__wrapper {
@@ -338,6 +339,10 @@
   .additional__box-col {
     margin: 0 auto;
     width: 100%;
+    text-align: center;
+  }
+  
+  .project-banner__titles{
     text-align: center;
   }
 
